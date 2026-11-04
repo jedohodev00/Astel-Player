@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Astel - Política de privacidad</title>
+<style>
+  :root{
+    --navy:#0B1A33;
+    --space:#050B18;
+    --blue:#1D5BFF;
+    --cyan:#5CC6FF;
+    --silver:#D2D9E5;
+    --muted:#8FA6BB;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:radial-gradient(1100px 700px at 85% 0%, #0d2246 0%, var(--space) 55%, #03060d 100%);
+    color:var(--silver);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:860px;margin:0 auto;padding:32px 20px 64px}
+  header{display:flex;align-items:center;gap:14px;margin:8px 0 28px}
+  .mark{
+    width:44px;height:44px;border-radius:12px;
+    background:linear-gradient(145deg,#1D5BFF,#0B1A33);
+    display:flex;align-items:center;justify-content:center;
+    color:#fff;font-weight:900;font-size:22px;
+    box-shadow:0 0 24px rgba(29,91,255,.45);
+  }
+  .brand b{display:block;color:#fff;font-size:20px;letter-spacing:.12em}
+  .brand span{display:block;color:var(--muted);font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+  .card{
+    background:rgba(11,26,51,.72);
+    border:1px solid rgba(92,198,255,.18);
+    border-radius:18px;
+    padding:30px 28px;
+    box-shadow:0 18px 60px rgba(0,0,0,.35);
+  }
+  h1{color:#fff;font-size:28px;line-height:1.2;margin:0 0 6px}
+  .date{color:var(--muted);font-size:13px;margin:0 0 26px}
+  h2{color:var(--cyan);font-size:17px;margin:28px 0 8px}
+  p{margin:0 0 12px}
+  ul{margin:0 0 12px 20px;padding:0}
+  li{margin:0 0 6px}
+  a{color:var(--cyan)}
+  strong{color:#fff}
+  .note{
+    border-left:3px solid var(--blue);
+    background:rgba(29,91,255,.08);
+    padding:10px 14px;
+    border-radius:8px;
+    color:#cfe0ff;
+    font-size:14px;
+    margin:16px 0;
+  }
+  footer{margin-top:26px;color:var(--muted);font-size:12px;text-align:center}
+  @media (max-width:560px){
+    .card{padding:22px 18px;border-radius:14px}
+    h1{font-size:23px}
+    .wrap{padding:22px 14px 44px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark">A</div>
+    <div class="brand"><b>ASTEL</b><span>Reproductor multimedia</span></div>
+  </header>
+
+  <main class="card">
+    <h1>Política de privacidad</h1>
+    <p class="date">Última actualización: 4 de noviembre de 2026</p>
+
+    <p>Astel es un <strong>reproductor multimedia</strong>. No incluye contenido
+    propio ni vende datos personales. Esta política explica qué datos trata la
+    aplicación.</p>
+
+    <h2>1. Datos que se guardan en el dispositivo</h2>
+    <ul>
+      <li><strong>Datos de acceso al servicio de medios</strong> (dirección del
+      servidor, usuario y contraseña): se guardan solo en el almacenamiento
+      local de la app, para no tener que escribirlos cada vez. No se envían a
+      Astel; se usan para conectar con el servicio que el usuario haya
+      configurado.</li>
+      <li><strong>Favoritos, historial, progreso de reproducción y ajustes</strong>:
+      se guardan en el dispositivo.</li>
+    </ul>
+
+    <h2>2. Sincronización opcional</h2>
+    <p>Si el usuario inicia sesión, los favoritos, el historial y el progreso se
+    sincronizan con Firebase usando un <strong>usuario anónimo</strong> (sin
+    nombre, correo ni teléfono). Sirven para recuperarlos en otro dispositivo.
+    No se sincronizan las contraseñas ni la URL del servicio.</p>
+
+    <h2>3. Informe de diagnóstico (opcional)</h2>
+    <p>En Ajustes &gt; Acerca de puede haber un botón para <strong>enviar un
+    informe de diagnóstico</strong>. Solo se envía si el usuario lo pulsa.
+    Incluye modelo del aparato, versión de Android, decodificadores, estado del
+    reproductor y las últimas líneas técnicas. Antes de enviarlo se eliminan
+    usuario, contraseña, URL del servicio y tokens. Se usa solo para resolver
+    problemas técnicos.</p>
+
+    <h2>4. Datos que no se recogen</h2>
+    <ul>
+      <li>No se piden nombre, correo, teléfono ni dirección.</li>
+      <li>No se usa publicidad ni se venden datos.</li>
+      <li>No se rastrea la ubicación.</li>
+      <li>No se accede a contactos, fotos ni archivos del dispositivo.</li>
+    </ul>
+
+    <h2>5. Servicios de terceros</h2>
+    <ul>
+      <li>El <strong>servicio de medios</strong> que configure el usuario recibe
+      sus datos de acceso y las peticiones de reproducción, con su propia
+      política de privacidad.</li>
+      <li><strong>Firebase</strong> (Google) aloja la sincronización anónima
+      descrita arriba.</li>
+      <li><strong>TMDB</strong> se usa para carátulas y fichas de películas y
+      series; solo se envían búsquedas de títulos, no datos personales.</li>
+    </ul>
+
+    <h2>6. Menores y control parental</h2>
+    <p>La app no está dirigida a menores. Incluye un control parental por PIN
+    para ocultar las categorías que el usuario marque. El contenido disponible
+    depende del servicio de medios del usuario.</p>
+
+    <h2>7. Conservación y borrado</h2>
+    <p>Los datos locales se borran al desinstalar la app o al limpiar sus datos.
+    Los datos sincronizados se pueden borrar desde la propia app
+    (historial/favoritos) o solicitando el borrado en el correo de contacto.</p>
+
+    <h2>8. Contacto</h2>
+    <p>Para cualquier duda sobre privacidad:
+    <strong>jedohodev00@gmail.com</strong></p>
+
+    <h2>9. Cambios</h2>
+    <p>Si cambia esta política, se publicará una versión nueva en la misma URL
+    con la fecha de actualización.</p>
+
+    <div class="note">
+      Astel no incluye contenido propio. Reproduce el contenido al que el
+      usuario ya tiene acceso con su servicio de medios.
+    </div>
+  </main>
+
+  <footer>Astel · Política de privacidad · 2026</footer>
+</div>
+</body>
+</html>
