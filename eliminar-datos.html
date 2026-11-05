@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Astel - Eliminar datos</title>
+<style>
+  :root{
+    --space:#050B18;
+    --blue:#1D5BFF;
+    --cyan:#5CC6FF;
+    --silver:#D2D9E5;
+    --muted:#8FA6BB;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:radial-gradient(1100px 700px at 85% 0%, #0d2246 0%, var(--space) 55%, #03060d 100%);
+    color:var(--silver);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:860px;margin:0 auto;padding:32px 20px 64px}
+  header{display:flex;align-items:center;gap:14px;margin:8px 0 28px}
+  .mark{
+    width:44px;height:44px;border-radius:12px;
+    background:linear-gradient(145deg,#1D5BFF,#0B1A33);
+    display:flex;align-items:center;justify-content:center;
+    color:#fff;font-weight:900;font-size:22px;
+    box-shadow:0 0 24px rgba(29,91,255,.45);
+  }
+  .brand b{display:block;color:#fff;font-size:20px;letter-spacing:.12em}
+  .brand span{display:block;color:var(--muted);font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+  .card{
+    background:rgba(11,26,51,.72);
+    border:1px solid rgba(92,198,255,.18);
+    border-radius:18px;
+    padding:30px 28px;
+    box-shadow:0 18px 60px rgba(0,0,0,.35);
+  }
+  h1{color:#fff;font-size:28px;line-height:1.2;margin:0 0 6px}
+  .date{color:var(--muted);font-size:13px;margin:0 0 26px}
+  h2{color:var(--cyan);font-size:17px;margin:28px 0 8px}
+  p{margin:0 0 12px}
+  ul,ol{margin:0 0 12px 20px;padding:0}
+  li{margin:0 0 6px}
+  a{color:var(--cyan)}
+  strong{color:#fff}
+  .btn{
+    display:inline-block;
+    margin:10px 0 4px;
+    padding:12px 20px;
+    border-radius:10px;
+    background:linear-gradient(135deg,#1D5BFF,#3F8BFF);
+    color:#fff;
+    text-decoration:none;
+    font-weight:700;
+    box-shadow:0 10px 30px rgba(29,91,255,.35);
+  }
+  .note{
+    border-left:3px solid var(--blue);
+    background:rgba(29,91,255,.08);
+    padding:10px 14px;
+    border-radius:8px;
+    color:#cfe0ff;
+    font-size:14px;
+    margin:16px 0;
+  }
+  .en{border-top:1px solid rgba(92,198,255,.18);margin-top:34px;padding-top:18px}
+  footer{margin-top:26px;color:var(--muted);font-size:12px;text-align:center}
+  @media (max-width:560px){
+    .card{padding:22px 18px;border-radius:14px}
+    h1{font-size:23px}
+    .wrap{padding:22px 14px 44px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark">A</div>
+    <div class="brand"><b>ASTEL</b><span>Reproductor multimedia</span></div>
+  </header>
+
+  <main class="card">
+    <h1>Eliminar tus datos</h1>
+    <p class="date">Última actualización: 5 de noviembre de 2026</p>
+
+    <p>Astel <strong>no crea cuentas</strong>: no hay registro, ni nombre, ni correo.
+    Aun así, la app guarda algunos datos para que funcione. Aquí tienes cómo
+    borrarlos.</p>
+
+    <h2>1. Qué datos guarda</h2>
+    <ul>
+      <li><strong>En el dispositivo</strong>: servidor, usuario y contraseña del
+      servicio que tú configures, favoritos, historial, progreso de reproducción
+      y ajustes.</li>
+      <li><strong>Sincronizados</strong>: favoritos, historial y progreso, con un
+      usuario <strong>anónimo</strong> de Firebase (sin nombre ni correo), para
+      recuperarlos en otro dispositivo.</li>
+    </ul>
+
+    <h2>2. Borrar los datos del dispositivo</h2>
+    <ol>
+      <li>Abre Astel y ve a <strong>Ajustes</strong>.</li>
+      <li>Borra el <strong>historial</strong> y los <strong>favoritos</strong>
+      desde sus pantallas.</li>
+      <li>Si quieres borrarlo todo de golpe: Ajustes de Android &gt;
+      Aplicaciones &gt; <strong>Astel</strong> &gt; Almacenamiento &gt;
+      <strong>Borrar datos</strong>, o desinstala la app.</li>
+    </ol>
+    <p>Al borrar el historial o los favoritos desde la app, también se borra la
+    copia sincronizada.</p>
+
+    <h2>3. Pedir el borrado por correo</h2>
+    <p>Si prefieres que lo borremos nosotros, escribe a
+    <strong>jedohodev00@gmail.com</strong> con el asunto
+    <strong>“Eliminar datos”</strong>. Indica el modelo del aparato y la fecha
+    aproximada de uso para poder localizar la sincronización anónima.</p>
+
+    <a class="btn" href="mailto:jedohodev00@gmail.com?subject=Eliminar%20datos%20-%20Astel">Solicitar borrado por correo</a>
+
+    <h2>4. Plazo</h2>
+    <p>Las solicitudes por correo se atienden en un plazo máximo de
+    <strong>30 días</strong>. No se conserva ningún dato después del borrado.</p>
+
+    <div class="note">
+      Astel no vende datos, no usa publicidad y no pide ubicación, contactos,
+      fotos ni datos de pago.
+    </div>
+
+    <div class="en">
+      <h2>Data deletion (English)</h2>
+      <p>Astel does not create accounts. It stores your media-service
+      credentials, favorites, history and playback progress on the device, and
+      syncs favorites, history and progress with an <strong>anonymous</strong>
+      Firebase user.</p>
+      <p>To delete them: open <strong>Settings</strong> in the app and clear
+      <strong>History</strong> and <strong>Favorites</strong>; or go to Android
+      Settings &gt; Apps &gt; <strong>Astel</strong> &gt; Storage &gt;
+      <strong>Clear data</strong>; or uninstall the app. You can also email
+      <strong>jedohodev00@gmail.com</strong> with the subject
+      <strong>“Delete data”</strong> and we will remove the synced copy within
+      30 days.</p>
+    </div>
+  </main>
+
+  <footer>Astel · Eliminar datos · 2026</footer>
+</div>
+</body>
+</html>
