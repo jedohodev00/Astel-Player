@@ -44,10 +44,21 @@
   .date{color:var(--muted);font-size:13px;margin:0 0 26px}
   h2{color:var(--cyan);font-size:17px;margin:28px 0 8px}
   p{margin:0 0 12px}
-  ul{margin:0 0 12px 20px;padding:0}
+  ul,ol{margin:0 0 12px 20px;padding:0}
   li{margin:0 0 6px}
   a{color:var(--cyan)}
   strong{color:#fff}
+  .btn{
+    display:inline-block;
+    margin:10px 0 4px;
+    padding:12px 20px;
+    border-radius:10px;
+    background:linear-gradient(135deg,#1D5BFF,#3F8BFF);
+    color:#fff;
+    text-decoration:none;
+    font-weight:700;
+    box-shadow:0 10px 30px rgba(29,91,255,.35);
+  }
   .note{
     border-left:3px solid var(--blue);
     background:rgba(29,91,255,.08);
@@ -57,6 +68,7 @@
     font-size:14px;
     margin:16px 0;
   }
+  .en{border-top:1px solid rgba(92,198,255,.18);margin-top:34px;padding-top:18px}
   footer{margin-top:26px;color:var(--muted);font-size:12px;text-align:center}
   @media (max-width:560px){
     .card{padding:22px 18px;border-radius:14px}
@@ -74,7 +86,7 @@
 
   <main class="card">
     <h1>Política de privacidad</h1>
-    <p class="date">Última actualización: 4 de noviembre de 2026</p>
+    <p class="date">Última actualización: 6 de noviembre de 2026</p>
 
     <p>Astel es un <strong>reproductor multimedia</strong>. No incluye contenido
     propio ni vende datos personales. Esta política explica qué datos trata la
@@ -91,13 +103,21 @@
       se guardan en el dispositivo.</li>
     </ul>
 
-    <h2>2. Sincronización opcional</h2>
-    <p>Si el usuario inicia sesión, los favoritos, el historial y el progreso se
-    sincronizan con Firebase usando un <strong>usuario anónimo</strong> (sin
-    nombre, correo ni teléfono). Sirven para recuperarlos en otro dispositivo.
-    No se sincronizan las contraseñas ni la URL del servicio.</p>
+    <h2>2. Sincronización con el servidor de Astel</h2>
+    <p>Si el usuario inicia sesión, los favoritos, el historial y el progreso de
+    reproducción se sincronizan con el servidor de Astel para poder
+    recuperarlos en otro dispositivo. La sincronización se asocia al
+    <strong>nombre de usuario del servicio de medios</strong> y a un
+    <strong>identificador aleatorio del aparato</strong>. No se sincronizan la
+    contraseña ni la dirección del servicio.</p>
 
-    <h2>3. Informe de diagnóstico (opcional)</h2>
+    <h2>3. Registro de acceso</h2>
+    <p>Al entrar y al abrir la app con la sesión iniciada se envía al servidor
+    de Astel: nombre de usuario, identificador del aparato, modelo, plataforma,
+    versión de la app, dirección IP y User-Agent. Se usa para gestionar los
+    accesos y prevenir abusos; no se usa para publicidad.</p>
+
+    <h2>4. Informe de diagnóstico (opcional)</h2>
     <p>En Ajustes &gt; Acerca de puede haber un botón para <strong>enviar un
     informe de diagnóstico</strong>. Solo se envía si el usuario lo pulsa.
     Incluye modelo del aparato, versión de Android, decodificadores, estado del
@@ -105,40 +125,40 @@
     usuario, contraseña, URL del servicio y tokens. Se usa solo para resolver
     problemas técnicos.</p>
 
-    <h2>4. Datos que no se recogen</h2>
+    <h2>5. Datos que no se recogen</h2>
     <ul>
       <li>No se piden nombre, correo, teléfono ni dirección.</li>
-      <li>No se usa publicidad ni se venden datos.</li>
+      <li>No se usa publicidad, no se usa el identificador de publicidad y no se venden datos.</li>
       <li>No se rastrea la ubicación.</li>
       <li>No se accede a contactos, fotos ni archivos del dispositivo.</li>
     </ul>
 
-    <h2>5. Servicios de terceros</h2>
+    <h2>6. Servicios de terceros</h2>
     <ul>
       <li>El <strong>servicio de medios</strong> que configure el usuario recibe
       sus datos de acceso y las peticiones de reproducción, con su propia
       política de privacidad.</li>
-      <li><strong>Firebase</strong> (Google) aloja la sincronización anónima
-      descrita arriba.</li>
       <li><strong>TMDB</strong> se usa para carátulas y fichas de películas y
       series; solo se envían búsquedas de títulos, no datos personales.</li>
     </ul>
 
-    <h2>6. Menores y control parental</h2>
+    <h2>7. Menores y control parental</h2>
     <p>La app no está dirigida a menores. Incluye un control parental por PIN
     para ocultar las categorías que el usuario marque. El contenido disponible
     depende del servicio de medios del usuario.</p>
 
-    <h2>7. Conservación y borrado</h2>
+    <h2>8. Conservación y borrado</h2>
     <p>Los datos locales se borran al desinstalar la app o al limpiar sus datos.
-    Los datos sincronizados se pueden borrar desde la propia app
-    (historial/favoritos) o solicitando el borrado en el correo de contacto.</p>
+    Los datos sincronizados se pueden borrar desde la propia app en
+    <strong>Ajustes &gt; Datos &gt; Borrar datos sincronizados</strong>, o
+    solicitando el borrado en el correo de contacto. Más detalles en la
+    <a href="eliminar-datos.html">página de borrado de datos</a>.</p>
 
-    <h2>8. Contacto</h2>
+    <h2>9. Contacto</h2>
     <p>Para cualquier duda sobre privacidad:
     <strong>jedohodev00@gmail.com</strong></p>
 
-    <h2>9. Cambios</h2>
+    <h2>10. Cambios</h2>
     <p>Si cambia esta política, se publicará una versión nueva en la misma URL
     con la fecha de actualización.</p>
 
@@ -147,8 +167,7 @@
       usuario ya tiene acceso con su servicio de medios.
     </div>
   </main>
-
-  <footer>Astel · Política de privacidad · 2026</footer>
+  <footer>Astel · 2026</footer>
 </div>
 </body>
 </html>
