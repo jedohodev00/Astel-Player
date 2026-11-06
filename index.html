@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Astel - Reproductor multimedia</title>
+<meta name="description" content="Astel es un reproductor multimedia para TV, películas, series y radio, con una interfaz pensada para el mando a distancia.">
+<style>
+  :root{
+    --navy:#0B1A33;
+    --space:#050B18;
+    --blue:#1D5BFF;
+    --cyan:#5CC6FF;
+    --silver:#D2D9E5;
+    --muted:#8FA6BB;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:radial-gradient(1100px 700px at 85% 0%, #0d2246 0%, var(--space) 55%, #03060d 100%);
+    color:var(--silver);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:960px;margin:0 auto;padding:32px 20px 64px}
+  header{display:flex;align-items:center;gap:14px;margin:8px 0 28px}
+  .mark{
+    width:48px;height:48px;border-radius:13px;
+    background:linear-gradient(145deg,#1D5BFF,#0B1A33);
+    display:flex;align-items:center;justify-content:center;
+    color:#fff;font-weight:900;font-size:24px;
+    box-shadow:0 0 26px rgba(29,91,255,.45);
+  }
+  .brand b{display:block;color:#fff;font-size:21px;letter-spacing:.14em}
+  .brand span{display:block;color:var(--muted);font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+
+  .hero{
+    background:rgba(11,26,51,.72);
+    border:1px solid rgba(92,198,255,.18);
+    border-radius:22px;
+    padding:38px 34px;
+    box-shadow:0 18px 60px rgba(0,0,0,.35);
+  }
+  .kicker{color:var(--cyan);font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+  h1{color:#fff;font-size:38px;line-height:1.15;margin:8px 0 12px}
+  .lead{color:#c3cbe6;font-size:17px;margin:0 0 22px;max-width:720px}
+
+  .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+  .btn{
+    display:inline-block;padding:12px 20px;border-radius:11px;
+    background:linear-gradient(135deg,#1D5BFF,#3F8BFF);
+    color:#fff;text-decoration:none;font-weight:700;
+    box-shadow:0 10px 30px rgba(29,91,255,.35);
+  }
+  .btn.alt{background:#0d1a2c;border:1px solid rgba(92,198,255,.25);box-shadow:none;color:#cfe0ff}
+  .btn:hover{filter:brightness(1.08)}
+
+  h2{color:#fff;font-size:20px;margin:34px 0 12px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+  .card{
+    background:rgba(11,26,51,.66);
+    border:1px solid rgba(92,198,255,.16);
+    border-radius:14px;
+    padding:18px 18px 16px;
+  }
+  .card b{display:block;color:#fff;font-size:15px;margin-bottom:4px}
+  .card span{display:block;color:var(--muted);font-size:13.5px;line-height:1.5}
+
+  .note{
+    border-left:3px solid var(--blue);
+    background:rgba(29,91,255,.08);
+    padding:12px 16px;
+    border-radius:9px;
+    color:#cfe0ff;
+    font-size:14px;
+    margin:26px 0 0;
+  }
+  footer{margin-top:30px;color:var(--muted);font-size:12.5px;text-align:center}
+  footer a{color:var(--cyan);text-decoration:none}
+  footer a:hover{text-decoration:underline}
+  @media (max-width:560px){
+    .hero{padding:24px 18px;border-radius:16px}
+    h1{font-size:28px}
+    .lead{font-size:15px}
+    .wrap{padding:22px 14px 44px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark">A</div>
+    <div class="brand"><b>ASTEL</b><span>Reproductor multimedia</span></div>
+  </header>
+
+  <main class="hero">
+    <div class="kicker">TV · Películas · Series · Radio</div>
+    <h1>Tu contenido, en una sola app</h1>
+    <p class="lead">
+      Astel es un reproductor multimedia para televisores, móviles y PC.
+      Reproduce el contenido al que ya tienes acceso con tu servicio de medios,
+      con una interfaz pensada para el mando a distancia y las pantallas grandes.
+    </p>
+
+    <div class="actions">
+      <a class="btn" href="privacidad.html">Política de privacidad</a>
+      <a class="btn alt" href="eliminar-datos.html">Eliminar datos</a>
+      <a class="btn alt" href="mailto:jedohodev00@gmail.com">Soporte</a>
+    </div>
+
+    <div class="note">
+      Astel no incluye contenido propio: reproduce el contenido al que el usuario
+      ya tiene acceso con su servicio de medios. No inserta anuncios ni realiza
+      compras dentro de la app.
+    </div>
+  </main>
+
+  <h2>Funciones</h2>
+  <div class="grid">
+    <div class="card"><b>TV en directo</b><span>Con guía de programas y vuelta atrás en los canales que lo permiten.</span></div>
+    <div class="card"><b>Películas y series</b><span>Ficha, temporadas, capítulos y reanudación desde donde lo dejaste.</span></div>
+    <div class="card"><b>Radio integrada</b><span>Emisoras con búsqueda, favoritos e historial.</span></div>
+    <div class="card"><b>Favoritos e historial</b><span>Todo a mano y sincronizado entre tus dispositivos.</span></div>
+    <div class="card"><b>Control parental</b><span>PIN para ocultar las categorías que elijas.</span></div>
+    <div class="card"><b>Búsqueda</b><span>Encuentra canales, películas y series en segundos.</span></div>
+  </div>
+
+  <h2>Disponible en</h2>
+  <div class="grid">
+    <div class="card"><b>Android</b><span>Móvil, tablet y Fire TV.</span></div>
+    <div class="card"><b>Samsung TV</b><span>Tizen, con mando a distancia.</span></div>
+    <div class="card"><b>PC</b><span>Windows.</span></div>
+  </div>
+
+  <footer>
+    Astel · 2026 · <a href="privacidad.html">Privacidad</a> · <a href="eliminar-datos.html">Borrado de datos</a> · <a href="mailto:jedohodev00@gmail.com">jedohodev00@gmail.com</a>
+  </footer>
+</div>
+</body>
+</html>
