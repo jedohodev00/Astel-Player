@@ -178,12 +178,14 @@ a { color: var(--cyan); }
     cursor: pointer;
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    padding: 9px 14px;
+    gap: 10px;
+    padding: 10px 14px;
     border: 1px solid var(--linea);
-    border-radius: 10px;
+    border-radius: 11px;
+    background: rgba(13, 26, 44, .8);
     color: var(--silver);
     font-size: 14px;
+    font-weight: 600;
 }
 
 .menu-movil summary::-webkit-details-marker { display: none; }
@@ -191,29 +193,49 @@ a { color: var(--cyan); }
 .menu-movil[open] summary {
     color: #fff;
     border-color: rgba(92, 198, 255, .4);
+    background: rgba(29, 91, 255, .16);
 }
 
 .menu-movil nav {
     position: absolute;
     right: 0;
     top: calc(100% + 10px);
-    min-width: 220px;
+    min-width: min(300px, calc(100vw - 24px));
     display: grid;
     gap: 2px;
-    padding: 10px;
-    border-radius: 14px;
-    background: #0a1526;
+    padding: 8px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #0c1a2e, #081422);
     border: 1px solid var(--linea);
-    box-shadow: 0 24px 60px rgba(0, 0, 0, .55);
+    box-shadow: 0 28px 70px rgba(0, 0, 0, .6);
 }
 
 .menu-movil nav a {
-    padding: 10px 12px;
-    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 11px 12px;
+    border-radius: 10px;
     border: 0;
+    color: var(--silver);
+    text-decoration: none;
+    font-size: 14.5px;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
-.menu-movil nav a:hover { background: rgba(29, 91, 255, .14); }
+.menu-movil nav a svg {
+    width: 19px;
+    height: 19px;
+    flex: 0 0 auto;
+    color: var(--cyan);
+    opacity: .9;
+}
+
+.menu-movil nav a:hover {
+    background: rgba(29, 91, 255, .16);
+    color: #fff;
+}
 
 /* ------------------------------------------------------------------ botones */
 
@@ -253,7 +275,8 @@ a { color: var(--cyan); }
     grid-template-columns: 1.12fr .88fr;
     gap: clamp(28px, 4vw, 56px);
     align-items: center;
-    padding: clamp(38px, 6vw, 84px) 0 clamp(26px, 4vw, 48px);
+    padding-top: clamp(38px, 6vw, 84px);
+    padding-bottom: clamp(26px, 4vw, 48px);
 }
 
 .kicker {
@@ -444,7 +467,14 @@ h1 {
 
 /* ---------------------------------------------------------------- secciones */
 
-.seccion { padding: clamp(34px, 5vw, 66px) 0; }
+.seccion {
+    padding-top: clamp(34px, 5vw, 66px);
+    padding-bottom: clamp(34px, 5vw, 66px);
+}
+
+/* un poco mas de aire antes del bloque de contacto */
+#contacto,
+#contact { padding-top: clamp(48px, 7vw, 88px); }
 
 .seccion-cabecera {
     max-width: 720px;
@@ -823,7 +853,8 @@ h1 {
 /* ---------------------------------------------------------- paginas legales */
 
 .legal {
-    padding: clamp(28px, 4vw, 54px) 0 10px;
+    padding-top: clamp(28px, 4vw, 54px);
+    padding-bottom: 10px;
 }
 
 .legal .migas {
@@ -912,7 +943,7 @@ h1 {
 }
 
 @media (max-width: 520px) {
-    .wrap { padding: 0 16px; }
+    .wrap { padding-left: 16px; padding-right: 16px; }
     .acciones .btn { width: 100%; justify-content: center; }
     .pantalla .rejilla { grid-template-columns: repeat(3, 1fr); }
     .pantalla .poster:nth-child(4) { display: none; }
