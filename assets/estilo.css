@@ -571,9 +571,32 @@ h1 {
     background: linear-gradient(165deg, rgba(13, 31, 60, .75), rgba(7, 16, 32, .65));
     border: 1px solid var(--linea);
     text-align: left;
+    transition: border-color .18s, transform .18s;
 }
 
-.dispositivo .icono { margin-bottom: 12px; }
+.dispositivo:hover {
+    transform: translateY(-3px);
+    border-color: rgba(92, 198, 255, .34);
+}
+
+/* logo oficial de la plataforma (monocromo, como en las fichas de tienda) */
+.marca-icono {
+    display: flex;
+    align-items: center;
+    height: 26px;
+    margin-bottom: 16px;
+    color: #e8f0ff;
+}
+
+.marca-icono svg {
+    height: 100%;
+    width: auto;
+    max-width: 132px;
+    fill: currentColor;
+}
+
+/* logotipos muy anchos (Samsung): un poco mas pequeños para compensar */
+.marca-icono svg.largo { max-width: 108px; }
 
 .dispositivo b {
     display: block;
@@ -610,6 +633,17 @@ h1 {
     height: 6px;
     border-radius: 50%;
     background: #37e07a;
+}
+
+.estado.revision {
+    color: #ffd48a;
+    background: rgba(255, 176, 32, .1);
+    border-color: rgba(255, 176, 32, .3);
+}
+
+.estado.revision::before {
+    background: #ffb020;
+    box-shadow: 0 0 8px rgba(255, 176, 32, .7);
 }
 
 /* pasos */
