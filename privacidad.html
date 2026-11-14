@@ -3,96 +3,72 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Astel - Política de privacidad</title>
-<style>
-  :root{
-    --navy:#0B1A33;
-    --space:#050B18;
-    --blue:#1D5BFF;
-    --cyan:#5CC6FF;
-    --silver:#D2D9E5;
-    --muted:#8FA6BB;
-  }
-  *{box-sizing:border-box}
-  html,body{margin:0;padding:0}
-  body{
-    background:radial-gradient(1100px 700px at 85% 0%, #0d2246 0%, var(--space) 55%, #03060d 100%);
-    color:var(--silver);
-    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
-    line-height:1.65;
-    -webkit-font-smoothing:antialiased;
-  }
-  .wrap{max-width:860px;margin:0 auto;padding:32px 20px 64px}
-  header{display:flex;align-items:center;gap:14px;margin:8px 0 28px}
-  .mark{
-    width:44px;height:44px;border-radius:12px;
-    background:linear-gradient(145deg,#1D5BFF,#0B1A33);
-    display:flex;align-items:center;justify-content:center;
-    color:#fff;font-weight:900;font-size:22px;
-    box-shadow:0 0 24px rgba(29,91,255,.45);
-  }
-  .brand b{display:block;color:#fff;font-size:20px;letter-spacing:.12em}
-  .brand span{display:block;color:var(--muted);font-size:11px;letter-spacing:.18em;text-transform:uppercase}
-  .card{
-    background:rgba(11,26,51,.72);
-    border:1px solid rgba(92,198,255,.18);
-    border-radius:18px;
-    padding:30px 28px;
-    box-shadow:0 18px 60px rgba(0,0,0,.35);
-  }
-  h1{color:#fff;font-size:28px;line-height:1.2;margin:0 0 6px}
-  .date{color:var(--muted);font-size:13px;margin:0 0 26px}
-  h2{color:var(--cyan);font-size:17px;margin:28px 0 8px}
-  p{margin:0 0 12px}
-  ul,ol{margin:0 0 12px 20px;padding:0}
-  li{margin:0 0 6px}
-  a{color:var(--cyan)}
-  strong{color:#fff}
-  .btn{
-    display:inline-block;
-    margin:10px 0 4px;
-    padding:12px 20px;
-    border-radius:10px;
-    background:linear-gradient(135deg,#1D5BFF,#3F8BFF);
-    color:#fff;
-    text-decoration:none;
-    font-weight:700;
-    box-shadow:0 10px 30px rgba(29,91,255,.35);
-  }
-  .note{
-    border-left:3px solid var(--blue);
-    background:rgba(29,91,255,.08);
-    padding:10px 14px;
-    border-radius:8px;
-    color:#cfe0ff;
-    font-size:14px;
-    margin:16px 0;
-  }
-  .en{border-top:1px solid rgba(92,198,255,.18);margin-top:34px;padding-top:18px}
-  footer{margin-top:26px;color:var(--muted);font-size:12px;text-align:center}
-  @media (max-width:560px){
-    .card{padding:22px 18px;border-radius:14px}
-    h1{font-size:23px}
-    .wrap{padding:22px 14px 44px}
-  }
-</style>
+<title>Política de privacidad · Astel</title>
+<meta name="description" content="Qué datos guarda Astel, cuáles no se recogen y cómo borrarlos.">
+<meta name="theme-color" content="#050B18">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231D5BFF'/%3E%3Cstop offset='1' stop-color='%230B1A33'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='45' font-family='Arial,sans-serif' font-size='38' font-weight='900' fill='%23fff' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/estilo.css">
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <div class="mark">A</div>
-    <div class="brand"><b>ASTEL</b><span>Reproductor multimedia</span></div>
-  </header>
 
-  <main class="card">
-    <h1>Política de privacidad</h1>
-    <p class="date">Última actualización: 6 de noviembre de 2026</p>
+<header class="cabecera">
+  <div class="wrap">
+    <a class="marca" href="index.html" aria-label="Astel, inicio">
+      <span class="mark" aria-hidden="true">A</span>
+      <span class="marca-texto"><b>ASTEL</b><span>Reproductor multimedia</span></span>
+    </a>
 
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html#funciones">Funciones</a>
+      <a href="index.html#dispositivos">Dispositivos</a>
+      <a href="index.html#como-funciona">Cómo funciona</a>
+      <a href="index.html#preguntas">Preguntas</a>
+      <a class="destacado" href="index.html#contacto">Soporte</a>
+    </nav>
+
+    <details class="menu-movil">
+      <summary aria-label="Abrir menú">
+        Menú
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </summary>
+      <nav aria-label="Principal (móvil)">
+        <a href="index.html#funciones">Funciones</a>
+        <a href="index.html#dispositivos">Dispositivos</a>
+        <a href="index.html">Inicio</a>
+        <a href="terminos.html">Términos</a>
+        <a href="eliminar-datos.html">Eliminar datos</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<main class="legal wrap">
+  <p class="migas"><a href="index.html">Inicio</a> · Política de privacidad</p>
+  <h1>Política de privacidad</h1>
+  <p class="fecha">Última actualización: 6 de noviembre de 2026</p>
+
+  <div class="legal-cuerpo">
     <p>Astel es un <strong>reproductor multimedia</strong>. No incluye contenido
     propio ni vende datos personales. Esta política explica qué datos trata la
-    aplicación.</p>
+    aplicación en todas sus plataformas (Samsung TV, LG, Android, Fire TV y Windows).</p>
 
-    <h2>1. Datos que se guardan en el dispositivo</h2>
+    <div class="indice">
+      <b>Contenido</b>
+      <ol>
+        <li><a href="#p1">Datos que se guardan en el dispositivo</a></li>
+        <li><a href="#p2">Sincronización con el servidor de Astel</a></li>
+        <li><a href="#p3">Registro de acceso</a></li>
+        <li><a href="#p4">Informe de diagnóstico (opcional)</a></li>
+        <li><a href="#p5">Datos que no se recogen</a></li>
+        <li><a href="#p6">Servicios de terceros</a></li>
+        <li><a href="#p7">Menores y control parental</a></li>
+        <li><a href="#p8">Conservación y borrado</a></li>
+        <li><a href="#p9">Contacto</a></li>
+        <li><a href="#p10">Cambios</a></li>
+      </ol>
+    </div>
+
+    <h2 id="p1">1. Datos que se guardan en el dispositivo</h2>
     <ul>
       <li><strong>Datos de acceso al servicio de medios</strong> (dirección del
       servidor, usuario y contraseña): se guardan solo en el almacenamiento
@@ -103,7 +79,7 @@
       se guardan en el dispositivo.</li>
     </ul>
 
-    <h2>2. Sincronización con el servidor de Astel</h2>
+    <h2 id="p2">2. Sincronización con el servidor de Astel</h2>
     <p>Si el usuario inicia sesión, los favoritos, el historial y el progreso de
     reproducción se sincronizan con el servidor de Astel para poder
     recuperarlos en otro dispositivo. La sincronización se asocia al
@@ -111,21 +87,21 @@
     <strong>identificador aleatorio del aparato</strong>. No se sincronizan la
     contraseña ni la dirección del servicio.</p>
 
-    <h2>3. Registro de acceso</h2>
+    <h2 id="p3">3. Registro de acceso</h2>
     <p>Al entrar y al abrir la app con la sesión iniciada se envía al servidor
     de Astel: nombre de usuario, identificador del aparato, modelo, plataforma,
     versión de la app, dirección IP y User-Agent. Se usa para gestionar los
     accesos y prevenir abusos; no se usa para publicidad.</p>
 
-    <h2>4. Informe de diagnóstico (opcional)</h2>
+    <h2 id="p4">4. Informe de diagnóstico (opcional)</h2>
     <p>En Ajustes &gt; Acerca de puede haber un botón para <strong>enviar un
     informe de diagnóstico</strong>. Solo se envía si el usuario lo pulsa.
-    Incluye modelo del aparato, versión de Android, decodificadores, estado del
+    Incluye modelo del aparato, versión del sistema, decodificadores, estado del
     reproductor y las últimas líneas técnicas. Antes de enviarlo se eliminan
     usuario, contraseña, URL del servicio y tokens. Se usa solo para resolver
     problemas técnicos.</p>
 
-    <h2>5. Datos que no se recogen</h2>
+    <h2 id="p5">5. Datos que no se recogen</h2>
     <ul>
       <li>No se piden nombre, correo, teléfono ni dirección.</li>
       <li>No se usa publicidad, no se usa el identificador de publicidad y no se venden datos.</li>
@@ -133,7 +109,7 @@
       <li>No se accede a contactos, fotos ni archivos del dispositivo.</li>
     </ul>
 
-    <h2>6. Servicios de terceros</h2>
+    <h2 id="p6">6. Servicios de terceros</h2>
     <ul>
       <li>El <strong>servicio de medios</strong> que configure el usuario recibe
       sus datos de acceso y las peticiones de reproducción, con su propia
@@ -142,32 +118,73 @@
       series; solo se envían búsquedas de títulos, no datos personales.</li>
     </ul>
 
-    <h2>7. Menores y control parental</h2>
+    <h2 id="p7">7. Menores y control parental</h2>
     <p>La app no está dirigida a menores. Incluye un control parental por PIN
     para ocultar las categorías que el usuario marque. El contenido disponible
     depende del servicio de medios del usuario.</p>
 
-    <h2>8. Conservación y borrado</h2>
+    <h2 id="p8">8. Conservación y borrado</h2>
     <p>Los datos locales se borran al desinstalar la app o al limpiar sus datos.
     Los datos sincronizados se pueden borrar desde la propia app en
     <strong>Ajustes &gt; Datos &gt; Borrar datos sincronizados</strong>, o
     solicitando el borrado en el correo de contacto. Más detalles en la
     <a href="eliminar-datos.html">página de borrado de datos</a>.</p>
 
-    <h2>9. Contacto</h2>
+    <h2 id="p9">9. Contacto</h2>
     <p>Para cualquier duda sobre privacidad:
     <strong>jedohodev00@gmail.com</strong></p>
 
-    <h2>10. Cambios</h2>
+    <h2 id="p10">10. Cambios</h2>
     <p>Si cambia esta política, se publicará una versión nueva en la misma URL
     con la fecha de actualización.</p>
 
-    <div class="note">
+    <p class="aviso">
       Astel no incluye contenido propio. Reproduce el contenido al que el
       usuario ya tiene acceso con su servicio de medios.
+    </p>
+  </div>
+</main>
+
+<footer class="pie">
+  <div class="wrap">
+    <div class="pie-rejilla">
+      <div>
+        <a class="marca" href="index.html" aria-label="Astel, inicio">
+          <span class="mark" aria-hidden="true">A</span>
+          <span class="marca-texto"><b>ASTEL</b><span>Reproductor multimedia</span></span>
+        </a>
+        <p>Reproductor multimedia para TV, móvil y PC. TV en directo, películas, series y radio.</p>
+      </div>
+      <div>
+        <h4>App</h4>
+        <ul>
+          <li><a href="index.html#funciones">Funciones</a></li>
+          <li><a href="index.html#dispositivos">Dispositivos</a></li>
+          <li><a href="index.html#como-funciona">Cómo funciona</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacidad.html">Privacidad</a></li>
+          <li><a href="terminos.html">Términos de uso</a></li>
+          <li><a href="eliminar-datos.html">Eliminar datos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:jedohodev00@gmail.com">jedohodev00@gmail.com</a></li>
+          <li><a href="mailto:jedohodev00@gmail.com?subject=Soporte%20Astel">Soporte</a></li>
+        </ul>
+      </div>
     </div>
-  </main>
-  <footer>Astel · 2026</footer>
-</div>
+    <div class="pie-legal">
+      <p>© 2026 Astel · Todos los derechos reservados.</p>
+      <p>Astel no aloja ni distribuye contenido de terceros.</p>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

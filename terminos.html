@@ -3,96 +3,86 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Astel - Términos del servicio</title>
-<style>
-  :root{
-    --navy:#0B1A33;
-    --space:#050B18;
-    --blue:#1D5BFF;
-    --cyan:#5CC6FF;
-    --silver:#D2D9E5;
-    --muted:#8FA6BB;
-  }
-  *{box-sizing:border-box}
-  html,body{margin:0;padding:0}
-  body{
-    background:radial-gradient(1100px 700px at 85% 0%, #0d2246 0%, var(--space) 55%, #03060d 100%);
-    color:var(--silver);
-    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
-    line-height:1.65;
-    -webkit-font-smoothing:antialiased;
-  }
-  .wrap{max-width:860px;margin:0 auto;padding:32px 20px 64px}
-  header{display:flex;align-items:center;gap:14px;margin:8px 0 28px}
-  .mark{
-    width:44px;height:44px;border-radius:12px;
-    background:linear-gradient(145deg,#1D5BFF,#0B1A33);
-    display:flex;align-items:center;justify-content:center;
-    color:#fff;font-weight:900;font-size:22px;
-    box-shadow:0 0 24px rgba(29,91,255,.45);
-  }
-  .brand b{display:block;color:#fff;font-size:20px;letter-spacing:.12em}
-  .brand span{display:block;color:var(--muted);font-size:11px;letter-spacing:.18em;text-transform:uppercase}
-  .card{
-    background:rgba(11,26,51,.72);
-    border:1px solid rgba(92,198,255,.18);
-    border-radius:18px;
-    padding:30px 28px;
-    box-shadow:0 18px 60px rgba(0,0,0,.35);
-  }
-  h1{color:#fff;font-size:28px;line-height:1.2;margin:0 0 6px}
-  .date{color:var(--muted);font-size:13px;margin:0 0 26px}
-  h2{color:var(--cyan);font-size:17px;margin:28px 0 8px}
-  p{margin:0 0 12px}
-  ul,ol{margin:0 0 12px 20px;padding:0}
-  li{margin:0 0 6px}
-  a{color:var(--cyan)}
-  strong{color:#fff}
-  .note{
-    border-left:3px solid var(--blue);
-    background:rgba(29,91,255,.08);
-    padding:10px 14px;
-    border-radius:8px;
-    color:#cfe0ff;
-    font-size:14px;
-    margin:16px 0;
-  }
-  footer{margin-top:26px;color:var(--muted);font-size:12px;text-align:center}
-  @media (max-width:560px){
-    .card{padding:22px 18px;border-radius:14px}
-    h1{font-size:23px}
-    .wrap{padding:22px 14px 44px}
-  }
-</style>
+<title>Términos de uso · Astel</title>
+<meta name="description" content="Condiciones de uso del reproductor multimedia Astel.">
+<meta name="theme-color" content="#050B18">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231D5BFF'/%3E%3Cstop offset='1' stop-color='%230B1A33'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='45' font-family='Arial,sans-serif' font-size='38' font-weight='900' fill='%23fff' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/estilo.css">
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <div class="mark">A</div>
-    <div class="brand"><b>ASTEL</b><span>Reproductor multimedia</span></div>
-  </header>
 
-  <main class="card">
-    <h1>Términos del servicio</h1>
-    <p class="date">Última actualización: 10 de noviembre de 2026</p>
+<header class="cabecera">
+  <div class="wrap">
+    <a class="marca" href="index.html" aria-label="Astel, inicio">
+      <span class="mark" aria-hidden="true">A</span>
+      <span class="marca-texto"><b>ASTEL</b><span>Reproductor multimedia</span></span>
+    </a>
 
-    <p>Estos términos regulan el uso de la aplicación <strong>Astel</strong>
-    (en adelante, “la App”). Al instalar, abrir o usar la App aceptas estos
-    términos. Si no estás de acuerdo, no uses la App.</p>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html#funciones">Funciones</a>
+      <a href="index.html#dispositivos">Dispositivos</a>
+      <a href="index.html#como-funciona">Cómo funciona</a>
+      <a href="index.html#preguntas">Preguntas</a>
+      <a class="destacado" href="index.html#contacto">Soporte</a>
+    </nav>
 
-    <h2>1. Objeto</h2>
+    <details class="menu-movil">
+      <summary aria-label="Abrir menú">
+        Menú
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </summary>
+      <nav aria-label="Principal (móvil)">
+        <a href="index.html">Inicio</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="terminos.html">Términos</a>
+        <a href="eliminar-datos.html">Eliminar datos</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<main class="legal wrap">
+  <p class="migas"><a href="index.html">Inicio</a> · Términos de uso</p>
+  <h1>Términos de uso</h1>
+  <p class="fecha">Última actualización: 6 de noviembre de 2026</p>
+
+  <div class="legal-cuerpo">
+    <p>Estos términos regulan el uso de <strong>Astel</strong> (en adelante,
+    “la App”). Al instalar, abrir o usar la App aceptas estos términos. Si no
+    estás de acuerdo, no uses la App.</p>
+
+    <div class="indice">
+      <b>Contenido</b>
+      <ol>
+        <li><a href="#t1">Objeto</a></li>
+        <li><a href="#t2">Requisitos de uso</a></li>
+        <li><a href="#t3">Uso permitido</a></li>
+        <li><a href="#t4">Uso prohibido</a></li>
+        <li><a href="#t5">Contenido de terceros</a></li>
+        <li><a href="#t6">Cuenta y seguridad</a></li>
+        <li><a href="#t7">Propiedad intelectual</a></li>
+        <li><a href="#t8">Privacidad y borrado de datos</a></li>
+        <li><a href="#t9">Exclusión de garantías</a></li>
+        <li><a href="#t10">Limitación de responsabilidad</a></li>
+        <li><a href="#t11">Cambios</a></li>
+        <li><a href="#t12">Contacto</a></li>
+        <li><a href="#t13">Legislación aplicable</a></li>
+      </ol>
+    </div>
+
+    <h2 id="t1">1. Objeto</h2>
     <p>La App es un <strong>reproductor multimedia</strong>. No incluye
-    contenido propio, no emite canales, no vende suscripciones y no proporciona
+    contenido propio, no emite canales, no vende planes ni cuotas y no proporciona
     listas, películas, series ni emisoras. El usuario configura su propio
     servicio de medios y accede con las credenciales que ya tiene.</p>
 
-    <div class="note">
+    <p class="aviso">
       Astel no aloja, selecciona ni distribuye el contenido que reproduce.
       Ese contenido lo proporciona el servicio de medios configurado por el
       usuario, que es el único responsable de su legalidad y disponibilidad.
-    </div>
+    </p>
 
-    <h2>2. Requisitos de uso</h2>
+    <h2 id="t2">2. Requisitos de uso</h2>
     <ul>
       <li>Debes ser mayor de edad o contar con autorización legal para usar el
       servicio de medios que configures.</li>
@@ -101,12 +91,12 @@
       <li>Debes mantener la confidencialidad de tus credenciales.</li>
     </ul>
 
-    <h2>3. Uso permitido</h2>
+    <h2 id="t3">3. Uso permitido</h2>
     <p>Se concede una licencia personal, limitada, no exclusiva y no
     transferible para usar la App en tus dispositivos, con fines personales y
     no comerciales, conforme a estos términos y a la ley aplicable.</p>
 
-    <h2>4. Uso prohibido</h2>
+    <h2 id="t4">4. Uso prohibido</h2>
     <ul>
       <li>Usar la App para acceder a contenido ilícito o sin autorización.</li>
       <li>Redistribuir, revender, alquilar o sublicenciar la App.</li>
@@ -117,61 +107,102 @@
       <li>Suplantar la identidad de otra persona o servicio.</li>
     </ul>
 
-    <h2>5. Contenido de terceros</h2>
+    <h2 id="t5">5. Contenido de terceros</h2>
     <p>La App puede mostrar contenido, carátulas, guías y datos procedentes del
     servicio de medios del usuario y de terceros (por ejemplo, TMDB). No
     controlamos ese contenido y no garantizamos que sea exacto, legal, seguro o
     esté disponible. El usuario asume la responsabilidad de comprobar que tiene
     derecho a acceder a ese contenido.</p>
 
-    <h2>6. Cuenta y seguridad</h2>
-    <p>La App no crea cuentas. El acceso se realiza con la cuenta del servicio
-    de medios del usuario. Las credenciales se guardan en el almacenamiento
+    <h2 id="t6">6. Cuenta y seguridad</h2>
+    <p>La App no crea cuentas. El acceso se realiza con la cuenta del servicio de
+    medios del usuario. Las credenciales se guardan en el almacenamiento
     privado de la App y se usan para conectar con el servicio configurado. El
     usuario es responsable de la actividad realizada con su cuenta.</p>
 
-    <h2>7. Propiedad intelectual</h2>
+    <h2 id="t7">7. Propiedad intelectual</h2>
     <p>La App, su nombre, su logotipo, su código y su diseño pertenecen a su
     desarrollador o a sus licenciantes. El contenido reproducido pertenece a
     sus respectivos titulares. Estos términos no te conceden ningún derecho
     sobre la App ni sobre el contenido de terceros.</p>
 
-    <h2>8. Privacidad y borrado de datos</h2>
+    <h2 id="t8">8. Privacidad y borrado de datos</h2>
     <p>El tratamiento de datos se describe en la
     <a href="privacidad.html">política de privacidad</a>. Puedes solicitar el
     borrado de tus datos en la
     <a href="eliminar-datos.html">página de borrado de datos</a> o escribiendo
     al correo de contacto.</p>
 
-    <h2>9. Exclusión de garantías</h2>
+    <h2 id="t9">9. Exclusión de garantías</h2>
     <p>La App se proporciona “tal cual” y “según disponibilidad”. En la medida
     permitida por la ley, no se garantiza que funcione sin interrupciones, que
     esté libre de errores ni que el contenido de terceros sea accesible,
     correcto o legal. El usuario utiliza la App bajo su propio riesgo.</p>
 
-    <h2>10. Limitación de responsabilidad</h2>
+    <h2 id="t10">10. Limitación de responsabilidad</h2>
     <p>En la medida permitida por la ley, el desarrollador no será responsable
     de daños indirectos, incidentales, especiales o consecuentes derivados del
     uso o de la imposibilidad de uso de la App, ni del contenido, servicios o
     conductas de terceros. Nada en estos términos limita los derechos que la
     ley reconozca al consumidor.</p>
 
-    <h2>11. Cambios</h2>
+    <h2 id="t11">11. Cambios</h2>
     <p>Podemos actualizar estos términos para reflejar cambios legales o
     técnicos. La versión vigente se publicará en esta misma URL con la fecha de
     actualización. El uso continuado de la App después de un cambio implica su
     aceptación.</p>
 
-    <h2>12. Contacto</h2>
+    <h2 id="t12">12. Contacto</h2>
     <p>Para cualquier duda sobre estos términos:
     <strong>jedohodev00@gmail.com</strong></p>
 
-    <h2>13. Legislación aplicable</h2>
+    <h2 id="t13">13. Legislación aplicable</h2>
     <p>Estos términos se rigen por la legislación aplicable en el domicilio del
     desarrollador, sin perjuicio de las normas imperativas de protección de los
     consumidores que resulten de aplicación.</p>
-  </main>
-  <footer>Astel · 2026</footer>
-</div>
+  </div>
+</main>
+
+<footer class="pie">
+  <div class="wrap">
+    <div class="pie-rejilla">
+      <div>
+        <a class="marca" href="index.html" aria-label="Astel, inicio">
+          <span class="mark" aria-hidden="true">A</span>
+          <span class="marca-texto"><b>ASTEL</b><span>Reproductor multimedia</span></span>
+        </a>
+        <p>Reproductor multimedia para TV, móvil y PC. TV en directo, películas, series y radio.</p>
+      </div>
+      <div>
+        <h4>App</h4>
+        <ul>
+          <li><a href="index.html#funciones">Funciones</a></li>
+          <li><a href="index.html#dispositivos">Dispositivos</a></li>
+          <li><a href="index.html#como-funciona">Cómo funciona</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacidad.html">Privacidad</a></li>
+          <li><a href="terminos.html">Términos de uso</a></li>
+          <li><a href="eliminar-datos.html">Eliminar datos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:jedohodev00@gmail.com">jedohodev00@gmail.com</a></li>
+          <li><a href="mailto:jedohodev00@gmail.com?subject=Soporte%20Astel">Soporte</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pie-legal">
+      <p>© 2026 Astel · Todos los derechos reservados.</p>
+      <p>Astel no aloja ni distribuye contenido de terceros.</p>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

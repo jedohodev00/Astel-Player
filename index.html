@@ -3,139 +3,349 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Astel - Reproductor multimedia</title>
-<meta name="description" content="Astel es un reproductor multimedia para TV, películas, series y radio, con una interfaz pensada para el mando a distancia.">
-<style>
-  :root{
-    --navy:#0B1A33;
-    --space:#050B18;
-    --blue:#1D5BFF;
-    --cyan:#5CC6FF;
-    --silver:#D2D9E5;
-    --muted:#8FA6BB;
-  }
-  *{box-sizing:border-box}
-  html,body{margin:0;padding:0}
-  body{
-    background:radial-gradient(1100px 700px at 85% 0%, #0d2246 0%, var(--space) 55%, #03060d 100%);
-    color:var(--silver);
-    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
-    line-height:1.65;
-    -webkit-font-smoothing:antialiased;
-  }
-  .wrap{max-width:960px;margin:0 auto;padding:32px 20px 64px}
-  header{display:flex;align-items:center;gap:14px;margin:8px 0 28px}
-  .mark{
-    width:48px;height:48px;border-radius:13px;
-    background:linear-gradient(145deg,#1D5BFF,#0B1A33);
-    display:flex;align-items:center;justify-content:center;
-    color:#fff;font-weight:900;font-size:24px;
-    box-shadow:0 0 26px rgba(29,91,255,.45);
-  }
-  .brand b{display:block;color:#fff;font-size:21px;letter-spacing:.14em}
-  .brand span{display:block;color:var(--muted);font-size:11px;letter-spacing:.18em;text-transform:uppercase}
-
-  .hero{
-    background:rgba(11,26,51,.72);
-    border:1px solid rgba(92,198,255,.18);
-    border-radius:22px;
-    padding:38px 34px;
-    box-shadow:0 18px 60px rgba(0,0,0,.35);
-  }
-  .kicker{color:var(--cyan);font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
-  h1{color:#fff;font-size:38px;line-height:1.15;margin:8px 0 12px}
-  .lead{color:#c3cbe6;font-size:17px;margin:0 0 22px;max-width:720px}
-
-  .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
-  .btn{
-    display:inline-block;padding:12px 20px;border-radius:11px;
-    background:linear-gradient(135deg,#1D5BFF,#3F8BFF);
-    color:#fff;text-decoration:none;font-weight:700;
-    box-shadow:0 10px 30px rgba(29,91,255,.35);
-  }
-  .btn.alt{background:#0d1a2c;border:1px solid rgba(92,198,255,.25);box-shadow:none;color:#cfe0ff}
-  .btn:hover{filter:brightness(1.08)}
-
-  h2{color:#fff;font-size:20px;margin:34px 0 12px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
-  .card{
-    background:rgba(11,26,51,.66);
-    border:1px solid rgba(92,198,255,.16);
-    border-radius:14px;
-    padding:18px 18px 16px;
-  }
-  .card b{display:block;color:#fff;font-size:15px;margin-bottom:4px}
-  .card span{display:block;color:var(--muted);font-size:13.5px;line-height:1.5}
-
-  .note{
-    border-left:3px solid var(--blue);
-    background:rgba(29,91,255,.08);
-    padding:12px 16px;
-    border-radius:9px;
-    color:#cfe0ff;
-    font-size:14px;
-    margin:26px 0 0;
-  }
-  footer{margin-top:30px;color:var(--muted);font-size:12.5px;text-align:center}
-  footer a{color:var(--cyan);text-decoration:none}
-  footer a:hover{text-decoration:underline}
-  @media (max-width:560px){
-    .hero{padding:24px 18px;border-radius:16px}
-    h1{font-size:28px}
-    .lead{font-size:15px}
-    .wrap{padding:22px 14px 44px}
-  }
-</style>
+<title>Astel · Reproductor multimedia para TV, móvil y PC</title>
+<meta name="description" content="Astel es un reproductor multimedia para Samsung TV, LG, Android, Fire TV y Windows. TV en directo, películas, series y radio con una interfaz pensada para el mando a distancia.">
+<meta name="theme-color" content="#050B18">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231D5BFF'/%3E%3Cstop offset='1' stop-color='%230B1A33'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='45' font-family='Arial,sans-serif' font-size='38' font-weight='900' fill='%23fff' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/estilo.css">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Astel · Reproductor multimedia">
+<meta property="og:description" content="TV en directo, películas, series y radio en Samsung TV, LG, Android, Fire TV y Windows.">
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <div class="mark">A</div>
-    <div class="brand"><b>ASTEL</b><span>Reproductor multimedia</span></div>
-  </header>
 
-  <main class="hero">
-    <div class="kicker">TV · Películas · Series · Radio</div>
-    <h1>Tu contenido, en una sola app</h1>
-    <p class="lead">
-      Astel es un reproductor multimedia para televisores, móviles y PC.
-      Reproduce el contenido al que ya tienes acceso con tu servicio de medios,
-      con una interfaz pensada para el mando a distancia y las pantallas grandes.
+<header class="cabecera">
+  <div class="wrap">
+    <a class="marca" href="index.html" aria-label="Astel, inicio">
+      <span class="mark" aria-hidden="true">A</span>
+      <span class="marca-texto">
+        <b>ASTEL</b>
+        <span>Reproductor multimedia</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Principal">
+      <a href="#funciones">Funciones</a>
+      <a href="#dispositivos">Dispositivos</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#preguntas">Preguntas</a>
+      <a class="destacado" href="#contacto">Soporte</a>
+    </nav>
+
+    <details class="menu-movil">
+      <summary aria-label="Abrir menú">
+        Menú
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </summary>
+      <nav aria-label="Principal (móvil)">
+        <a href="#funciones">Funciones</a>
+        <a href="#dispositivos">Dispositivos</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#preguntas">Preguntas</a>
+        <a href="#contacto">Soporte</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="terminos.html">Términos</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===================================================== portada -->
+  <section class="hero wrap">
+    <div>
+      <p class="kicker">TV en directo · Películas · Series · Radio</p>
+      <h1>Tu contenido,<br><span class="degradado">en una sola app.</span></h1>
+      <p class="entradilla">
+        Astel es un reproductor multimedia para televisores, móviles y PC.
+        Reproduce el contenido al que ya tienes acceso con tu servicio de medios,
+        con una interfaz pensada para el mando a distancia y las pantallas grandes.
+      </p>
+
+      <div class="acciones">
+        <a class="btn" href="#dispositivos">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="13" rx="2"/><path d="M8 21h8"/></svg>
+          Ver dispositivos
+        </a>
+        <a class="btn alt" href="#funciones">Funciones</a>
+      </div>
+
+      <div class="sellos" aria-label="Disponible en">
+        <span class="sello">Samsung TV</span>
+        <span class="sello">LG TV</span>
+        <span class="sello">Android</span>
+        <span class="sello">Fire TV</span>
+        <span class="sello">Windows</span>
+      </div>
+    </div>
+
+    <div class="maqueta" aria-hidden="true">
+      <div class="pantalla">
+        <div class="franja">
+          <span class="punto"></span><span class="punto"></span><span class="punto"></span>
+          <span class="titulo">Astel</span>
+        </div>
+        <div class="rejilla">
+          <span class="poster"></span><span class="poster"></span>
+          <span class="poster"></span><span class="poster"></span>
+        </div>
+        <span class="reproducir"></span>
+        <div class="barra"><i></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================== que es / no es -->
+  <section class="seccion wrap" id="que-es">
+    <div class="seccion-cabecera">
+      <p class="kicker">Qué es Astel</p>
+      <h2>Un reproductor, no un catálogo</h2>
+      <p>Astel no incluye contenido propio: conecta con el servicio de medios que tú ya tengas contratado y lo muestra con una interfaz cómoda en cualquier pantalla.</p>
+    </div>
+
+    <div class="duo">
+      <div class="tarjeta">
+        <b>Qué es</b>
+        <ul class="lista si">
+          <li>Un reproductor multimedia multiplataforma: TV, móvil, tablet y PC.</li>
+          <li>Una app para usar el servicio de medios al que ya tienes acceso.</li>
+          <li>Una interfaz adaptada al mando: rejilla, guía de programas y ficha de cada título.</li>
+          <li>Privacidad por diseño: sin publicidad y sin rastreadores.</li>
+        </ul>
+      </div>
+      <div class="tarjeta">
+        <b>Qué no es</b>
+        <ul class="lista no">
+          <li>No aloja, selecciona ni distribuye contenido de terceros.</li>
+          <li>No vende canales, suscripciones ni listas de reproducción.</li>
+          <li>No pide datos personales, ubicación ni acceso a tus archivos.</li>
+          <li>No inserta anuncios ni cobra compras dentro de la app.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================== funciones -->
+  <section class="seccion wrap" id="funciones">
+    <div class="seccion-cabecera">
+      <p class="kicker">Funciones</p>
+      <h2>Todo lo que necesitas, a un botón</h2>
+      <p>Pensado para usarse con el mando: pocos pasos, texto grande y todo donde esperas encontrarlo.</p>
+    </div>
+
+    <div class="rejilla">
+      <article class="tarjeta">
+        <span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M17 2l-5 5-5-5"/></svg></span>
+        <h3>TV en directo</h3>
+        <p>Canales en directo con guía de programas, información del espacio actual y siguiente.</p>
+      </article>
+
+      <article class="tarjeta">
+        <span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+        <h3>Vuelve atrás</h3>
+        <p>En los canales que lo permiten, retrocede o adelanta por el programa con la barra de progreso.</p>
+      </article>
+
+      <article class="tarjeta">
+        <span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg></span>
+        <h3>Películas y series</h3>
+        <p>Ficha con sinopsis, reparto, temporadas y capítulos. Reanuda justo donde lo dejaste.</p>
+      </article>
+
+      <article class="tarjeta">
+        <span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18v-6a8 8 0 0 1 16 0v6"/><rect x="2" y="14" width="4" height="6" rx="1"/><rect x="18" y="14" width="4" height="6" rx="1"/></svg></span>
+        <h3>Radio integrada</h3>
+        <p>Emisoras con búsqueda, favoritos e historial, sin salir de la app.</p>
+      </article>
+
+      <article class="tarjeta">
+        <span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.6 6.1.8-4.5 4.3 1.2 6-5.4-3-5.4 3 1.2-6L3.3 9.4l6.1-.8z"/></svg></span>
+        <h3>Favoritos e historial</h3>
+        <p>Guarda lo que te gusta y retoma lo último que viste, sincronizado entre tus aparatos.</p>
+      </article>
+
+      <article class="tarjeta">
+        <span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></span>
+        <h3>Control parental</h3>
+        <p>Oculta las categorías que elijas con un PIN. El contenido depende de tu servicio de medios.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================================================== dispositivos -->
+  <section class="seccion wrap" id="dispositivos">
+    <div class="seccion-cabecera">
+      <p class="kicker">Dispositivos</p>
+      <h2>Dónde puedes instalarlo</h2>
+      <p>La misma app, adaptada a cada mando y a cada pantalla. Estas son las plataformas disponibles hoy.</p>
+    </div>
+
+    <div class="dispositivos">
+      <article class="dispositivo">
+        <span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M11 18h2"/></svg></span>
+        <b>Android</b>
+        <span>Móvil, tablet y Android TV</span>
+        <span class="estado">Disponible</span>
+      </article>
+
+      <article class="dispositivo">
+        <span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M7 22h10M12 18v4"/></svg></span>
+        <b>Fire TV · Fire Stick</b>
+        <span>Amazon Fire OS</span>
+        <span class="estado">Disponible</span>
+      </article>
+
+      <article class="dispositivo">
+        <span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 22h8M12 18v4"/></svg></span>
+        <b>Samsung TV</b>
+        <span>Tizen · con instalador</span>
+        <span class="estado">Disponible</span>
+      </article>
+
+      <article class="dispositivo">
+        <span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M7 18h10"/></svg></span>
+        <b>LG TV</b>
+        <span>webOS · Homebrew</span>
+        <span class="estado">Disponible</span>
+      </article>
+
+      <article class="dispositivo">
+        <span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>
+        <b>Windows PC</b>
+        <span>Instalador de escritorio</span>
+        <span class="estado">Disponible</span>
+      </article>
+    </div>
+
+    <p class="aviso" style="margin-top:18px">
+      ¿No sabes cómo instalarlo en tu tele? Escríbenos y te pasamos la guía del modelo.
     </p>
+  </section>
 
-    <div class="actions">
-      <a class="btn" href="privacidad.html">Política de privacidad</a>
-      <a class="btn alt" href="eliminar-datos.html">Eliminar datos</a>
-      <a class="btn alt" href="mailto:jedohodev00@gmail.com">Soporte</a>
+  <!-- ===================================================== como funciona -->
+  <section class="seccion wrap" id="como-funciona">
+    <div class="seccion-cabecera">
+      <p class="kicker">Cómo funciona</p>
+      <h2>Tres pasos y ya está</h2>
+      <p>Sin registro en Astel y sin datos personales: solo tu servicio de medios.</p>
     </div>
 
-    <div class="note">
-      Astel no incluye contenido propio: reproduce el contenido al que el usuario
-      ya tiene acceso con su servicio de medios. No inserta anuncios ni realiza
-      compras dentro de la app.
+    <div class="pasos">
+      <article class="paso">
+        <b>Instala Astel</b>
+        <span>En tu tele, móvil o PC, con la guía de instalación de tu plataforma.</span>
+      </article>
+      <article class="paso">
+        <b>Conecta tu servicio</b>
+        <span>Escribe la dirección y el usuario de tu servicio de medios. Se guardan solo en tu aparato.</span>
+      </article>
+      <article class="paso">
+        <b>Disfruta</b>
+        <span>Canales, guía, películas, series y radio, todo con el mando y tu cuenta de siempre.</span>
+      </article>
     </div>
-  </main>
+  </section>
 
-  <h2>Funciones</h2>
-  <div class="grid">
-    <div class="card"><b>TV en directo</b><span>Con guía de programas y vuelta atrás en los canales que lo permiten.</span></div>
-    <div class="card"><b>Películas y series</b><span>Ficha, temporadas, capítulos y reanudación desde donde lo dejaste.</span></div>
-    <div class="card"><b>Radio integrada</b><span>Emisoras con búsqueda, favoritos e historial.</span></div>
-    <div class="card"><b>Favoritos e historial</b><span>Todo a mano y sincronizado entre tus dispositivos.</span></div>
-    <div class="card"><b>Control parental</b><span>PIN para ocultar las categorías que elijas.</span></div>
-    <div class="card"><b>Búsqueda</b><span>Encuentra canales, películas y series en segundos.</span></div>
+  <!-- ===================================================== preguntas -->
+  <section class="seccion wrap" id="preguntas">
+    <div class="seccion-cabecera">
+      <p class="kicker">Preguntas frecuentes</p>
+      <h2>Dudas habituales</h2>
+    </div>
+
+    <div class="faq">
+      <details>
+        <summary>¿Astel incluye canales o películas?</summary>
+        <p>No. Astel es solo el reproductor: el contenido lo pone el servicio de medios que tú configures. No vendemos ni distribuimos listas, canales ni suscripciones.</p>
+      </details>
+
+      <details>
+        <summary>¿Tengo que crear una cuenta en Astel?</summary>
+        <p>No hay registro. La app usa la cuenta de tu servicio de medios, que se guarda en el almacenamiento privado del aparato y no se envía a Astel.</p>
+      </details>
+
+      <details>
+        <summary>¿Cómo se instala en una tele Samsung o LG?</summary>
+        <p>En Samsung se instala con el instalador de Astel, que prepara la tele y coloca la app. En LG se usa el Homebrew Channel. Te pasamos la guía paso a paso si la necesitas.</p>
+      </details>
+
+      <details>
+        <summary>¿Funciona en Fire TV y Fire Stick?</summary>
+        <p>Sí, en dispositivos Fire OS. La interfaz cambia sola al modo TV y se maneja con el mando del Fire.</p>
+      </details>
+
+      <details>
+        <summary>¿Recopiláis datos personales?</summary>
+        <p>No pedimos nombre, correo, teléfono ni ubicación. Solo se sincronizan favoritos, historial y progreso, asociados al usuario de tu servicio y a un identificador aleatorio del aparato. Puedes borrarlo cuando quieras.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ===================================================== contacto -->
+  <section class="seccion wrap" id="contacto">
+    <div class="contacto">
+      <div>
+        <h2>¿Te ayudamos?</h2>
+        <p>Escríbenos para instalación, dudas o cualquier problema con la app. Respondemos lo antes posible.</p>
+      </div>
+      <div class="acciones">
+        <a class="btn" href="mailto:jedohodev00@gmail.com?subject=Soporte%20Astel">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          Escribir a soporte
+        </a>
+        <a class="btn alt" href="privacidad.html">Privacidad</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie">
+  <div class="wrap">
+    <div class="pie-rejilla">
+      <div>
+        <a class="marca" href="index.html" aria-label="Astel, inicio">
+          <span class="mark" aria-hidden="true">A</span>
+          <span class="marca-texto"><b>ASTEL</b><span>Reproductor multimedia</span></span>
+        </a>
+        <p>Reproductor multimedia para TV, móvil y PC. TV en directo, películas, series y radio con una interfaz pensada para el mando.</p>
+      </div>
+
+      <div>
+        <h4>App</h4>
+        <ul>
+          <li><a href="#funciones">Funciones</a></li>
+          <li><a href="#dispositivos">Dispositivos</a></li>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="#preguntas">Preguntas</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacidad.html">Privacidad</a></li>
+          <li><a href="terminos.html">Términos de uso</a></li>
+          <li><a href="eliminar-datos.html">Eliminar datos</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:jedohodev00@gmail.com">jedohodev00@gmail.com</a></li>
+          <li><a href="mailto:jedohodev00@gmail.com?subject=Soporte%20Astel">Soporte</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pie-legal">
+      <p>© 2026 Astel · Todos los derechos reservados.</p>
+      <p>Astel no aloja ni distribuye contenido de terceros. Solo reproduce el contenido al que el usuario tiene acceso con su propio servicio.</p>
+    </div>
   </div>
+</footer>
 
-  <h2>Disponible en</h2>
-  <div class="grid">
-    <div class="card"><b>Android</b><span>Móvil, tablet y Fire TV.</span></div>
-    <div class="card"><b>Samsung TV</b><span>Tizen, con mando a distancia.</span></div>
-    <div class="card"><b>PC</b><span>Windows.</span></div>
-  </div>
-
-  <footer>
-    Astel · 2026 · <a href="privacidad.html">Privacidad</a> · <a href="eliminar-datos.html">Borrado de datos</a> · <a href="mailto:jedohodev00@gmail.com">jedohodev00@gmail.com</a>
-  </footer>
-</div>
 </body>
 </html>
