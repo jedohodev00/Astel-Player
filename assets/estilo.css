@@ -682,6 +682,25 @@ h1 {
     box-shadow: 0 0 8px rgba(255, 176, 32, .7);
 }
 
+.estado.desarrollo {
+    color: #9ecbff;
+    background: rgba(92, 198, 255, .1);
+    border-color: rgba(92, 198, 255, .3);
+}
+
+.estado.desarrollo::before {
+    background: #5cc6ff;
+    box-shadow: 0 0 8px rgba(92, 198, 255, .7);
+}
+
+/* plataformas que aun no estan */
+.nota-plataformas {
+    margin: 14px 0 0;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.55;
+}
+
 /* pasos */
 .pasos {
     display: grid;

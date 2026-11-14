@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Astel · Media player for TV, mobile and PC</title>
+<meta name="description" content="Astel is a media player for Samsung TV, LG, Android, Fire TV and Windows, and soon iPhone, iPad, Apple TV, Mac and Vega OS. Live TV, movies, series and radio with an interface built for the remote control.">
+<meta name="theme-color" content="#050B18">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231D5BFF'/%3E%3Cstop offset='1' stop-color='%230B1A33'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='45' font-family='Arial,sans-serif' font-size='38' font-weight='900' fill='%23fff' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/estilo.css?v=20261114d">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Astel · Media player">
+<meta property="og:description" content="Live TV, movies, series and radio on Samsung TV, LG, Android, Fire TV and Windows, and soon iPhone, iPad, Apple TV, Mac and Vega OS.">
+</head>
+<body>
+
+<header class="cabecera">
+  <div class="wrap">
+    <a class="marca" href="index2.html" aria-label="Astel, home">
+      <span class="mark" aria-hidden="true">A</span>
+      <span class="marca-texto">
+        <b>ASTEL</b>
+        <span>Media player</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Main">
+      <a href="#features">Features</a>
+      <a href="#devices">Devices</a>
+      <a href="#download">Windows</a>
+      <a href="#how">How it works</a>
+      <a href="#faq">FAQ</a>
+      <span class="idioma" aria-label="Language">
+        <a href="../index2.html" hreflang="es" lang="es">ES</a>
+        <span class="activo">EN</span>
+      </span>
+      <a class="destacado" href="#contact">Support</a>
+    </nav>
+
+    <details class="menu-movil">
+      <summary aria-label="Open menu">
+        Menu
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </summary>
+      <nav aria-label="Main (mobile)">
+        <a href="#features"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="15" x="2" y="7" rx="2" ry="2"/><polyline points="17 2 12 7 7 2"/></svg>Features</a>
+        <a href="#devices"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h8"/><path d="M10 19v-3.96 3.15"/><path d="M7 19h5"/><rect width="6" height="10" x="16" y="12" rx="2"/></svg>Devices</a>
+        <a href="#how"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg>How it works</a>
+        <a href="#download"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v11"/><path d="M7.5 9.5 12 14l4.5-4.5"/><path d="M4 18.5h16"/></svg>Windows</a>
+        <a href="#faq"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>FAQ</a>
+        <a href="#contact"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/><circle cx="12" cy="12" r="4"/></svg>Support</a>
+        <a href="privacy.html"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>Privacy</a>
+        <a href="terms.html"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>Terms</a>
+        <span class="idioma" aria-label="Language">
+          <a href="../index2.html" hreflang="es" lang="es">ES</a>
+          <span class="activo">EN</span>
+        </span>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===================================================== hero -->
+  <section class="hero wrap">
+    <div>
+      <p class="kicker">Live TV · Movies · Series · Radio</p>
+      <h1>Your content,<br><span class="degradado">in one app.</span></h1>
+      <p class="entradilla">
+        Astel is a media player for TVs, phones and PC. It plays the content you
+        already have access to with your media service, with an interface built
+        for the remote control and big screens.
+      </p>
+
+      <div class="acciones">
+        <a class="btn" href="https://update.apppilot.top/WS/Astel-Setup-0.9.0-lite.exe" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v11"/><path d="M7.5 9.5 12 14l4.5-4.5"/><path d="M4 18.5h16"/></svg>
+          Download for Windows
+        </a>
+        <a class="btn alt" href="#devices">See devices</a>
+        <a class="btn alt" href="#features">Features</a>
+      </div>
+
+      <div class="sellos" aria-label="Available on">
+        <span class="sello">Samsung TV</span>
+        <span class="sello">LG TV</span>
+        <span class="sello">Android</span>
+        <span class="sello">Fire TV</span>
+        <span class="sello">Windows</span>
+      </div>
+      <p class="nota-plataformas">Coming soon: iPhone, iPad, Apple TV, Mac and Vega OS.</p>
+    </div>
+
+    <div class="maqueta" aria-hidden="true">
+      <div class="pantalla">
+        <div class="franja">
+          <span class="punto"></span><span class="punto"></span><span class="punto"></span>
+          <span class="titulo">Astel</span>
+        </div>
+        <div class="rejilla">
+          <span class="poster"></span><span class="poster"></span>
+          <span class="poster"></span><span class="poster"></span>
+        </div>
+        <span class="reproducir"></span>
+        <div class="barra"><i></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================== what it is -->
+  <section class="seccion wrap" id="what">
+    <div class="seccion-cabecera">
+      <p class="kicker">What Astel is</p>
+      <h2>A player, not a catalogue</h2>
+      <p>Astel does not include any content of its own: it connects to the media service you already subscribe to and shows it with a comfortable interface on any screen.</p>
+    </div>
+
+    <div class="duo">
+      <div class="tarjeta">
+        <b>What it is</b>
+        <ul class="lista si">
+          <li>A cross-platform media player: TV, phone, tablet and PC.</li>
+          <li>An app to use the media service you already have access to.</li>
+          <li>An interface built for the remote: grid, programme guide and a page for every title.</li>
+          <li>Privacy by design: no ads and no trackers.</li>
+        </ul>
+      </div>
+      <div class="tarjeta">
+        <b>What it is not</b>
+        <ul class="lista no">
+          <li>It does not host, select or distribute third-party content.</li>
+          <li>It does not sell channels, subscriptions or playlists.</li>
+          <li>It does not ask for personal data, location or access to your files.</li>
+          <li>It does not show ads and there are no in-app purchases.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================== features -->
+  <section class="seccion wrap" id="features">
+    <div class="seccion-cabecera">
+      <p class="kicker">Features</p>
+      <h2>Everything you need, one button away</h2>
+      <p>Made for the remote: few steps, large text and everything where you expect it.</p>
+    </div>
+
+    <div class="rejilla">
+      <article class="tarjeta">
+        <span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15.033 9.44a.647.647 0 0 1 0 1.12l-4.065 2.352a.645.645 0 0 1-.968-.56V7.648a.645.645 0 0 1 .967-.56z"/><path d="M7 21h10"/><rect width="20" height="14" x="2" y="3" rx="2"/></svg></span>
+        <h3>Live TV</h3>
+        <p>Live channels with a programme guide, plus details of what is on now and next.</p>
+      </article>
+
+      <article class="tarjeta">
+        <span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></svg></span>
+        <h3>Go back</h3>
+        <p>On channels that support it, move back or forward through the programme with the progress bar.</p>
+      </article>
+
+      <article class="tarjeta">
+        <span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12.296 3.464 3.02 3.956"/><path d="M20.2 6 3 11l-.9-2.4c-.3-1.1.3-2.2 1.3-2.5l13.5-4c1.1-.3 2.2.3 2.5 1.3z"/><path d="M3 11h18v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="m6.18 5.276 3.1 3.899"/></svg></span>
+        <h3>Movies and series</h3>
+        <p>Synopsis, cast, seasons and episodes. Resume right where you left off.</p>
+      </article>
+
+      <article class="tarjeta">
+        <span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16.247 7.761a6 6 0 0 1 0 8.478"/><path d="M19.075 4.933a10 10 0 0 1 0 14.134"/><path d="M4.925 19.067a10 10 0 0 1 0-14.134"/><path d="M7.753 16.239a6 6 0 0 1 0-8.478"/><circle cx="12" cy="12" r="2"/></svg></span>
+        <h3>Built-in radio</h3>
+        <p>Stations with search, favourites and history, without leaving the app.</p>
+      </article>
+
+      <article class="tarjeta">
+        <span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/></svg></span>
+        <h3>Favourites and history</h3>
+        <p>Save what you like and pick up where you left off, synced across your devices.</p>
+      </article>
+
+      <article class="tarjeta">
+        <span class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+        <h3>Parental control</h3>
+        <p>Hide the categories you choose with a PIN. Available content depends on your media service.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================================================== devices -->
+  <section class="seccion wrap" id="devices">
+    <div class="seccion-cabecera">
+      <p class="kicker">Devices</p>
+      <h2>Where you can install it</h2>
+      <p>The same app, adapted to each remote and each screen. These are the platforms available today and the ones on the way.</p>
+    </div>
+
+    <div class="dispositivos">
+      <article class="dispositivo">
+        <span class="marca-icono" aria-hidden="true">
+          <svg viewBox="0 5.01 24 13.98" role="img"><path d="M18.4395 5.5586c-.675 1.1664-1.352 2.3318-2.0274 3.498-.0366-.0155-.0742-.0286-.1113-.043-1.8249-.6957-3.484-.8-4.42-.787-1.8551.0185-3.3544.4643-4.2597.8203-.084-.1494-1.7526-3.021-2.0215-3.4864a1.1451 1.1451 0 0 0-.1406-.1914c-.3312-.364-.9054-.4859-1.379-.203-.475.282-.7136.9361-.3886 1.5019 1.9466 3.3696-.0966-.2158 1.9473 3.3593.0172.031-.4946.2642-1.3926 1.0177C2.8987 12.176.452 14.772 0 18.9902h24c-.119-1.1108-.3686-2.099-.7461-3.0683-.7438-1.9118-1.8435-3.2928-2.7402-4.1836a12.1048 12.1048 0 0 0-2.1309-1.6875c.6594-1.122 1.312-2.2559 1.9649-3.3848.2077-.3615.1886-.7956-.0079-1.1191a1.1001 1.1001 0 0 0-.8515-.5332c-.5225-.0536-.9392.3128-1.0488.5449zm-.0391 8.461c.3944.5926.324 1.3306-.1563 1.6503-.4799.3197-1.188.0985-1.582-.4941-.3944-.5927-.324-1.3307.1563-1.6504.4727-.315 1.1812-.1086 1.582.4941zM7.207 13.5273c.4803.3197.5506 1.0577.1563 1.6504-.394.5926-1.1038.8138-1.584.4941-.48-.3197-.5503-1.0577-.1563-1.6504.4008-.6021 1.1087-.8106 1.584-.4941z"/></svg>
+        </span>
+        <b>Android</b>
+        <span>Phone, tablet and Android TV</span>
+        <span class="estado revision">In review</span>
+      </article>
+
+      <article class="dispositivo">
+        <span class="marca-icono" aria-hidden="true">
+          <svg viewBox="0 5.57 24 12.87" role="img"><path d="M20.196 15.12c.265.337-.294 1.73-.542 2.353-.077.19.085.266.257.123 1.106-.926 1.39-2.867 1.166-3.149-.226-.277-2.16-.516-3.341.314-.183.127-.151.304.05.279.665-.08 2.147-.257 2.41.08m-.858.981c-2.064 1.523-5.056 2.333-7.632 2.333-3.611 0-6.862-1.334-9.322-3.555-.194-.176-.02-.414.21-.28 2.655 1.545 5.939 2.477 9.328 2.477 2.287 0 4.803-.476 7.115-1.458.348-.147.642.231.3.483m2.034-3.155a.388.388 0 0 1-.201-.04c-.041-.026-.087-.1-.133-.225l-1.734-4.355a1.79 1.79 0 0 0-.046-.117.266.266 0 0 1-.023-.108c0-.084.049-.128.146-.128h.58c.098 0 .165.014.205.04.04.026.082.102.127.226l1.344 3.823 1.343-3.823c.046-.124.089-.2.128-.226a.402.402 0 0 1 .205-.04h.54c.1 0 .148.044.148.128a.3.3 0 0 1-.025.108c-.016.04-.032.078-.044.117l-1.727 4.355c-.045.124-.09.199-.132.225a.388.388 0 0 1-.201.04zm-3.644.068c-.929 0-1.392-.463-1.392-1.392V8.739h-.706c-.13 0-.197-.066-.197-.196v-.246a.22.22 0 0 1 .045-.147c.03-.031.086-.055.171-.067l.717-.09.127-1.215c.013-.13.082-.196.207-.196h.41c.13 0 .196.066.196.196v1.196h1.276c.13 0 .195.065.195.197v.372c0 .13-.064.196-.195.196h-1.276v2.834c0 .243.055.411.162.51.108.098.293.147.555.147.124 0 .277-.016.46-.049.099-.02.164-.03.197-.03.052 0 .088.014.108.044.02.03.029.077.029.142v.266a.366.366 0 0 1-.04.19c-.026.043-.078.078-.157.103a3.018 3.018 0 0 1-.892.118m-4.665-2.976c.006-.052.011-.137.011-.255 0-.399-.094-.698-.28-.901-.186-.204-.46-.306-.818-.306-.412 0-.732.123-.962.369-.228.245-.36.61-.392 1.093zm-.942 3.07c-.803 0-1.411-.222-1.824-.667-.412-.444-.616-1.102-.616-1.972 0-.83.204-1.475.616-1.937.413-.46.988-.691 1.728-.691.62 0 1.098.176 1.432.524.332.351.5.846.5 1.487 0 .21-.017.422-.05.638-.014.077-.034.13-.064.156-.029.027-.077.04-.142.04h-3.08c.013.563.154.977.418 1.245.265.268.674.403 1.23.403.196 0 .385-.014.564-.04a5.04 5.04 0 0 0 .682-.166l.117-.035a.284.284 0 0 1 .09-.016c.085 0 .125.06.125.177v.276c0 .085-.012.144-.037.18a.441.441 0 0 1-.167.114 3.38 3.38 0 0 1-.701.205 4.236 4.236 0 0 1-.82.079m-5.424-.147c-.13 0-.195-.066-.195-.197v-4.58c0-.13.064-.195.195-.195h.432c.064 0 .116.012.153.039.036.025.06.076.072.146l.07.55c.176-.19.343-.34.499-.452a1.725 1.725 0 0 1 1.02-.323c.079 0 .158.003.235.01.112.014.168.072.168.176v.53c0 .117-.058.177-.178.177-.058 0-.114-.004-.17-.01a1.638 1.638 0 0 0-.18-.01c-.524 0-.973.157-1.346.47v3.472c0 .131-.066.197-.195.197zm-2.249 0c-.13 0-.196-.066-.196-.197v-4.58c0-.13.066-.195.196-.195h.579c.13 0 .195.064.195.195v4.58c0 .131-.065.197-.195.197zm.295-5.856c-.19 0-.339-.054-.447-.16a.581.581 0 0 1-.161-.428c0-.176.054-.318.16-.426.11-.109.257-.163.448-.163.189 0 .337.054.446.163.107.108.16.25.16.426a.581.581 0 0 1-.16.427.608.608 0 0 1-.446.161m-3.625 5.856c-.132 0-.197-.066-.197-.197v-4.01H.195c-.13 0-.195-.066-.195-.197v-.245c0-.065.014-.114.043-.147.03-.033.088-.055.173-.07l.705-.087v-.804c0-1.091.523-1.638 1.57-1.638.248 0 .51.036.784.109.072.019.122.047.152.088.029.038.044.107.044.205v.255c0 .124-.048.186-.148.186-.058 0-.14-.01-.248-.029-.11-.02-.23-.03-.369-.03-.3 0-.51.057-.633.172-.121.115-.181.303-.181.564v.903h1.324c.131 0 .197.064.197.195v.373c0 .13-.066.197-.197.197H1.892v4.01c0 .131-.065.197-.196.197Z"/></svg>
+        </span>
+        <b>Fire TV · Fire Stick</b>
+        <span>Amazon Fire OS</span>
+        <span class="estado">Available</span>
+      </article>
+
+      <article class="dispositivo">
+        <span class="marca-icono" aria-hidden="true">
+          <svg class="largo" viewBox="0 10.17 24 3.67" role="img"><path d="M19.8166 10.2808l.0459 2.6934h-.023l-.7793-2.6934h-1.2837v3.3925h.8481l-.0458-2.785h.023l.8366 2.785h1.2264v-3.3925zm-16.149 0l-.6418 3.427h.9284l.4699-3.1175h.0229l.4585 3.1174h.9169l-.6304-3.4269zm5.1805 0l-.424 2.6132h-.023l-.424-2.6132H6.5788l-.0688 3.427h.8596l.023-3.0832h.0114l.573 3.0831h.8711l.5731-3.083h.023l.0228 3.083h.8596l-.0802-3.4269zm-7.2664 2.4527c.0343.0802.0229.1949.0114.2522-.0229.1146-.1031.2292-.3324.2292-.2177 0-.3438-.126-.3438-.3095v-.3323H0v.2636c0 .7679.6074.9971 1.2493.9971.6189 0 1.1346-.2178 1.2149-.7794.0458-.298.0114-.4928 0-.5616-.1605-.722-1.467-.9283-1.5588-1.3295-.0114-.0688-.0114-.1375 0-.1834.023-.1146.1032-.2292.3095-.2292.2063 0 .321.126.321.3095v.2063h.8595v-.2407c0-.745-.6762-.8596-1.1576-.8596-.6074 0-1.1117.2063-1.2034.7564-.023.149-.0344.2866.0114.4585.1376.7106 1.364.9169 1.5358 1.3524m11.152 0c.0343.0803.0228.1834.0114.2522-.023.1146-.1032.2292-.3324.2292-.2178 0-.3438-.126-.3438-.3095v-.3323h-.917v.2636c0 .7564.596.9857 1.2379.9857.6189 0 1.1232-.2063 1.2034-.7794.0459-.298.0115-.4814 0-.5616-.1375-.7106-1.4327-.9284-1.5243-1.318-.0115-.0688-.0115-.1376 0-.1835.0229-.1146.1031-.2292.3094-.2292.1948 0 .321.126.321.3095v.2063h.848v-.2407c0-.745-.6647-.8596-1.146-.8596-.6075 0-1.1004.1948-1.192.7564-.023.149-.023.2866.0114.4585.1376.7106 1.341.9054 1.513 1.3524m2.8882.4585c.2407 0 .3094-.1605.3323-.2522.0115-.0343.0115-.0917.0115-.126v-2.533h.871v2.4642c0 .0688 0 .1948-.0114.2292-.0573.6419-.5616.8482-1.192.8482-.6303 0-1.1346-.2063-1.192-.8482 0-.0344-.0114-.1604-.0114-.2292v-2.4642h.871v2.533c0 .0458 0 .0916.0115.126 0 .0917.0688.2522.3095.2522m7.1518-.0344c.2522 0 .3324-.1605.3553-.2522.0115-.0343.0115-.0917.0115-.126v-.4929h-.3553v-.5043H24v.917c0 .0687 0 .1145-.0115.2292-.0573.6303-.596.8481-1.2034.8481-.6075 0-1.1461-.2178-1.2034-.8481-.0115-.1147-.0115-.1605-.0115-.2293v-1.444c0-.0574.0115-.172.0115-.2293.0802-.6419.596-.8482 1.2034-.8482s1.1347.2063 1.2034.8482c.0115.1031.0115.2292.0115.2292v.1146h-.8596v-.1948s0-.0803-.0115-.1261c-.0114-.0802-.0802-.2521-.3438-.2521-.2521 0-.321.1604-.3438.2521-.0115.0458-.0115.1032-.0115.1605v1.5702c0 .0458 0 .0916.0115.126 0 .0917.0917.2522.3323.2522"/></svg>
+        </span>
+        <b>Samsung TV</b>
+        <span>Tizen · Samsung Apps Store</span>
+        <span class="estado revision">In review</span>
+      </article>
+
+      <article class="dispositivo">
+        <span class="marca-icono" aria-hidden="true">
+          <svg viewBox="0 6.71 24 10.58" role="img"><path d="M14.522 14.078h3.27v1.33h-4.847v-6.83h1.577v5.5zm6.74-1.274h1.284v1.195c-.236.09-.698.18-1.137.18-1.42 0-1.893-.721-1.893-2.186 0-1.398.45-2.221 1.869-2.221.791 0 1.24.248 1.612.722l.982-.903c-.6-.855-1.646-1.114-2.629-1.114-2.208 0-3.368 1.205-3.368 3.504 0 2.288 1.047 3.528 3.358 3.528 1.06 0 2.096-.27 2.66-.665V11.53h-2.739v1.274zM5.291 6.709a5.29 5.29 0 1 1 0 10.582 5.291 5.291 0 1 1 0-10.582m3.16 8.457a4.445 4.445 0 0 0 1.31-3.161v-.242l-.22.001H6.596v.494h2.662l-.001.015a3.985 3.985 0 0 1-3.965 3.708 3.95 3.95 0 0 1-2.811-1.165 3.952 3.952 0 0 1-1.164-2.811c0-1.061.414-2.059 1.164-2.81a3.951 3.951 0 0 1 2.81-1.164l.252.003v-.495l-.251-.003a4.475 4.475 0 0 0-4.47 4.469c0 1.194.465 2.316 1.309 3.161a4.444 4.444 0 0 0 3.16 1.31 4.444 4.444 0 0 0 3.162-1.31m-2.91-1.297V9.644H5.04v4.72h1.556v-.495H5.543zm-1.265-3.552a.676.676 0 1 0-.675.674.676.676 0 0 0 .675-.674"/></svg>
+        </span>
+        <b>LG TV</b>
+        <span>webOS · LG Content Store</span>
+        <span class="estado revision">In review</span>
+      </article>
+
+      <a class="dispositivo descargable" href="#download">
+        <span class="marca-icono" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img"><path d="M2 3.2h9.1v9.1H2zM12.9 3.2H22v9.1h-9.1zM2 13.1h9.1v9.1H2zM12.9 13.1H22v9.1h-9.1z"/></svg>
+        </span>
+        <b>Windows PC</b>
+        <span>Windows 10/11 · Installer</span>
+        <span class="estado">Available</span>
+      </a>
+
+      <article class="dispositivo">
+        <span class="marca-icono" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+        </span>
+        <b>iPhone · iPad</b>
+        <span>iOS · iPadOS</span>
+        <span class="estado desarrollo">In development</span>
+      </article>
+
+      <article class="dispositivo">
+        <span class="marca-icono" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img" style="fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round"><rect x="2" y="5" width="20" height="12.5" rx="2"/><path d="M8 21h8"/></svg>
+        </span>
+        <b>Apple TV</b>
+        <span>tvOS</span>
+        <span class="estado desarrollo">In development</span>
+      </article>
+
+      <article class="dispositivo">
+        <span class="marca-icono" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img" style="fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round"><rect x="4" y="4" width="16" height="11" rx="1.6"/><path d="M2 19h20"/><path d="M9.5 19h5"/></svg>
+        </span>
+        <b>Mac</b>
+        <span>macOS</span>
+        <span class="estado desarrollo">In development</span>
+      </article>
+
+      <article class="dispositivo">
+        <span class="marca-icono" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="img" style="fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round"><circle cx="12" cy="12" r="3.1"/><ellipse cx="12" cy="12" rx="9.4" ry="4.1" transform="rotate(-28 12 12)"/></svg>
+        </span>
+        <b>Vega OS</b>
+        <span>Fire TV · Amazon</span>
+        <span class="estado desarrollo">In development</span>
+      </article>
+
+    </div>
+    <p class="nota-plataformas">iPhone, iPad, Apple TV, Mac and Vega OS are in development: they will be released when ready.</p>
+  </section>
+
+  <!-- ===================================================== how it works -->
+  <section class="seccion wrap" id="how">
+    <div class="seccion-cabecera">
+      <p class="kicker">How it works</p>
+      <h2>Three steps and you are done</h2>
+      <p>No Astel account and no personal data: just your media service.</p>
+    </div>
+
+    <div class="pasos">
+      <article class="paso">
+        <b>Install Astel</b>
+        <span>On your TV or phone from your platform's store, or on your PC with the Windows installer.</span>
+      </article>
+      <article class="paso">
+        <b>Connect your service</b>
+        <span>Enter your media service address and username. They are stored only on your device.</span>
+      </article>
+      <article class="paso">
+        <b>Enjoy</b>
+        <span>Channels, guide, movies, series and radio, all with the remote and your usual account.</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================================================== download -->
+  <section class="seccion wrap" id="download">
+    <div class="descarga">
+      <div class="descarga-texto">
+        <p class="kicker">Windows 10/11 · 64-bit</p>
+        <h2>Download Astel for PC</h2>
+        <p class="descarga-intro">The installer is 2.6 MB and downloads the app (about 76 MB) while it installs. It installs per user without asking for administrator rights and leaves its own uninstaller.</p>
+
+        <div class="acciones">
+          <a class="btn" href="https://update.apppilot.top/WS/Astel-Setup-0.9.0-lite.exe" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v11"/><path d="M7.5 9.5 12 14l4.5-4.5"/><path d="M4 18.5h16"/></svg>
+            Download installer · 2.6 MB
+          </a>
+        </div>
+
+        <p class="descarga-nota">Windows may warn that the file is not commonly downloaded (SmartScreen) because the installer is not signed yet: click “More info” → “Run anyway”.</p>
+      </div>
+
+      <dl class="descarga-datos">
+        <div><dt>Version</dt><dd>0.9.0</dd></div>
+        <div><dt>Installer</dt><dd>2.6 MB</dd></div>
+        <div><dt>App download</dt><dd>76.0 MB</dd></div>
+        <div><dt>Requirements</dt><dd>Windows 10/11 · 64-bit</dd></div>
+        <div><dt>Verification</dt><dd>
+          <a href="https://update.apppilot.top/WS/Astel-Setup-0.9.0-lite.exe.sha256">Installer SHA-256</a><br>
+          <a href="https://update.apppilot.top/WS/Astel-0.9.0.7z.sha256">App SHA-256</a>
+        </dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ===================================================== faq -->
+  <section class="seccion wrap" id="faq">
+    <div class="seccion-cabecera">
+      <p class="kicker">FAQ</p>
+      <h2>Common questions</h2>
+    </div>
+
+    <div class="faq">
+      <details>
+        <summary>Does Astel include channels or movies?</summary>
+        <p>No. Astel is only the player: the content is provided by the media service you configure. We do not sell or distribute playlists, channels or subscriptions.</p>
+      </details>
+
+      <details>
+        <summary>Do I need to create an Astel account?</summary>
+        <p>There is no sign-up. The app uses your media service account, which is stored in the device's private storage and is not sent to Astel.</p>
+      </details>
+
+      <details>
+        <summary>How do I install it on a Samsung or LG TV?</summary>
+        <p>On Samsung and LG you install it from the TV's own app store (Samsung Apps and LG Content Store).</p>
+      </details>
+
+      <details>
+        <summary>Does it work on Fire TV and Fire Stick?</summary>
+        <p>Yes, on Fire OS devices. The interface switches to TV mode automatically and works with the Fire remote.</p>
+      </details>
+
+      <details>
+        <summary>How do I install it on Windows?</summary>
+        <p>Download the installer and run it: the app is downloaded during installation and appears in the Start menu, with no administrator rights needed. If Windows shows a SmartScreen warning, click “More info” → “Run anyway”.</p>
+      </details>
+
+      <details>
+        <summary>Do you collect personal data?</summary>
+        <p>We do not ask for name, email, phone or location. Only favourites, history and progress are synced, linked to your service username and a random device identifier. You can delete them at any time.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ===================================================== contact -->
+  <section class="seccion wrap" id="contact">
+    <div class="contacto">
+      <div>
+        <h2>Need help?</h2>
+        <p>Write to us about the app or any technical issue. We reply as soon as possible.</p>
+      </div>
+      <div class="acciones">
+        <a class="btn" href="mailto:jedohodev00@gmail.com?subject=Astel%20support">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          Email support
+        </a>
+        <a class="btn alt" href="privacy.html">Privacy</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie">
+  <div class="wrap">
+    <div class="pie-rejilla">
+      <div>
+        <a class="marca" href="index2.html" aria-label="Astel, home">
+          <span class="mark" aria-hidden="true">A</span>
+          <span class="marca-texto"><b>ASTEL</b><span>Media player</span></span>
+        </a>
+        <p>Media player for TV, mobile and PC. Live TV, movies, series and radio with an interface built for the remote.</p>
+      </div>
+
+      <div>
+        <h4>App</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#devices">Devices</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms of use</a></li>
+          <li><a href="delete-data.html">Delete data</a></li>
+          <li><button type="button" class="enlace-boton" data-aviso>Legal notice</button></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:jedohodev00@gmail.com">jedohodev00@gmail.com</a></li>
+          <li><a href="mailto:jedohodev00@gmail.com?subject=Astel%20support">Support</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pie-legal">
+      <p>© 2026 Astel · All rights reserved.</p>
+      <p>Astel does not host or distribute third-party content. It only plays content the user can access through their own service.</p>
+    </div>
+  </div>
+</footer>
+
+<dialog class="aviso-legal" id="avisoLegal" aria-labelledby="avisoTituloEn">
+  <div class="dialog-idioma" role="group" aria-label="Notice language">
+    <button type="button" data-idioma="es" lang="es">Español</button>
+    <button type="button" data-idioma="en" class="activo">English</button>
+  </div>
+
+  <div class="dialog-cuerpo" data-texto="en">
+    <span class="dialog-icono" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+    </span>
+    <h2 id="avisoTituloEn">Before you start</h2>
+    <p><strong>Astel is only a media player.</strong> It is not a TV service or a
+    catalogue: we do not include, host, sell or distribute channels, movies,
+    series or any other content.</p>
+    <ul>
+      <li>All content is provided by the media service you configure.</li>
+      <li>You must have the right to access that content and comply with its terms.</li>
+      <li>Astel is not responsible for the content played or for how the app is used.</li>
+    </ul>
+    <div class="dialog-pie">
+      <button class="btn" type="button" data-aceptar="en">Got it</button>
+      <a href="terms.html">Terms of use</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+    <p class="dialog-nota">By continuing you confirm that you have read this notice and accept the terms.</p>
+  </div>
+
+  <div class="dialog-cuerpo" data-texto="es" hidden lang="es">
+    <span class="dialog-icono" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+    </span>
+    <h2>Antes de empezar</h2>
+    <p><strong>Astel es solo un reproductor multimedia.</strong> No es un servicio
+    de televisión ni un catálogo: no incluimos, alojamos, vendemos ni distribuimos
+    canales, películas, series ni ningún otro contenido.</p>
+    <ul>
+      <li>Todo el contenido lo aporta el servicio de medios que tú configures.</li>
+      <li>Debes tener derecho a acceder a ese contenido y cumplir sus condiciones.</li>
+      <li>Astel no se hace responsable del contenido reproducido ni del uso que se haga de la app.</li>
+    </ul>
+    <div class="dialog-pie">
+      <button class="btn" type="button" data-aceptar="es">Continuar en español</button>
+      <a href="../terminos.html" hreflang="es">Términos de uso</a>
+      <a href="../privacidad.html" hreflang="es">Privacidad</a>
+    </div>
+    <p class="dialog-nota">Al continuar confirmas que has leído este aviso y aceptas los términos.</p>
+  </div>
+</dialog>
+
+<script>
+(function () {
+  var d = document.getElementById('avisoLegal');
+  if (!d) return;
+  var CLAVE = 'astel_aviso_legal_v1';
+  var enIngles = location.pathname.indexOf('/en/') >= 0;
+
+  function pintar(l) {
+    d.querySelectorAll('[data-texto]').forEach(function (el) {
+      el.hidden = el.getAttribute('data-texto') !== l;
+    });
+    d.querySelectorAll('[data-idioma]').forEach(function (b) {
+      b.classList.toggle('activo', b.getAttribute('data-idioma') === l);
+    });
+  }
+
+  function abrir(l) {
+    pintar(l || (enIngles ? 'en' : 'es'));
+    try { if (!d.open) d.showModal(); } catch (e) { d.setAttribute('open', ''); }
+  }
+
+  function cerrar() {
+    try { d.close(); } catch (e) { d.removeAttribute('open'); }
+  }
+
+  var visto = false;
+  try { visto = localStorage.getItem(CLAVE) === '1'; } catch (e) {}
+  if (!visto) abrir();
+
+  d.querySelectorAll('[data-idioma]').forEach(function (b) {
+    b.addEventListener('click', function () { pintar(b.getAttribute('data-idioma')); });
+  });
+
+  d.querySelectorAll('[data-aceptar]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      try { localStorage.setItem(CLAVE, '1'); } catch (e) {}
+      var l = b.getAttribute('data-aceptar');
+      if (l !== (enIngles ? 'en' : 'es')) {
+        location.href = (l === 'en') ? (enIngles ? 'index2.html' : 'en/index2.html') : (enIngles ? '../index2.html' : 'index2.html');
+        return;
+      }
+      cerrar();
+    });
+  });
+
+  document.querySelectorAll('[data-aviso]').forEach(function (b) {
+    b.addEventListener('click', function (e) {
+      e.preventDefault();
+      abrir(enIngles ? 'en' : 'es');
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
