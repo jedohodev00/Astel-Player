@@ -1279,3 +1279,84 @@ dialog.aviso-legal .dialog-nota {
     .movil { width: 30%; border-radius: 16px; padding: 5px; }
     .movil-pantalla { border-radius: 12px; }
 }
+
+/* ------------------------------------------------ instalar en Samsung */
+.instalador-hero { align-items: center; }
+
+.ficha-app {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.ficha-app span {
+    padding: 6px 11px;
+    border-radius: 999px;
+    border: 1px solid var(--linea);
+    background: rgba(11, 26, 51, .55);
+    color: #b9c8dd;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.nota-apk {
+    margin: 12px 0 0;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.65;
+}
+
+.nota-apk code {
+    color: #9ec8ff;
+    font-size: 11px;
+    word-break: break-all;
+}
+
+.qr-caja {
+    width: 300px;
+    max-width: 100%;
+    justify-self: center;
+    padding: 14px 14px 12px;
+    border-radius: 20px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 30px 70px rgba(0, 0, 0, .5);
+}
+
+.qr-caja img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.qr-caja b {
+    display: block;
+    margin-top: 10px;
+    color: #0b1a33;
+    font-size: 13.5px;
+}
+
+.qr-caja small {
+    display: block;
+    margin-top: 2px;
+    color: #5b6b7f;
+    font-size: 11px;
+}
+
+.requisitos {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.requisito {
+    padding: 20px;
+    border-radius: 16px;
+    background: var(--cristal);
+    border: 1px solid var(--linea);
+}
+
+.requisito b { display: block; color: #fff; font-size: 15.5px; margin-bottom: 5px; }
+.requisito span { color: var(--muted); font-size: 13.8px; }
