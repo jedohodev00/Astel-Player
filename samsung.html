@@ -64,7 +64,7 @@
       <p class="kicker">Samsung TV · Instalador</p>
       <h1>Instala Astel<br><span class="degradado">en tu Samsung.</span></h1>
       <p class="entradilla">
-        Descarga el instalador en tu móvil Android. Se conecta a la TV por la red de casa,
+        Descarga el instalador en tu móvil o tablet Android. Se conecta a la TV por la red de casa,
         descarga Astel y lo instala. Sin PC y sin Tizen Studio.
       </p>
 
@@ -111,16 +111,16 @@
         <span>Tizen 2.4 o superior. Funciona en modelos antiguos y recientes.</span>
       </article>
       <article class="requisito">
-        <b>Un móvil Android</b>
-        <span>Android 7 o superior. El instalador se descarga en el teléfono, no en la TV.</span>
+        <b>Un móvil o tablet Android</b>
+        <span>Android 7 o superior. El instalador se descarga en el dispositivo, no en la TV.</span>
       </article>
       <article class="requisito">
         <b>La misma Wi-Fi</b>
-        <span>El móvil y la TV tienen que estar en la misma red local.</span>
+        <span>El móvil o tablet y la TV tienen que estar en la misma red local.</span>
       </article>
       <article class="requisito">
         <b>Una cuenta Samsung</b>
-        <span>Iniciada en la TV: es imprescindible para activar el modo desarrollador. Si no tienes, se crea gratis en <a href="https://v3.account.samsung.com" target="_blank" rel="noopener">v3.account.samsung.com</a>.</span>
+        <span>Necesaria, e iniciada en la TV: sin ella no se puede activar el modo desarrollador. Si no tienes, se crea gratis en <a href="https://v3.account.samsung.com" target="_blank" rel="noopener">v3.account.samsung.com</a>.</span>
       </article>
     </div>
   </section>
@@ -136,18 +136,18 @@
     <div class="pasos">
       <article class="paso">
         <b>Descarga el APK</b>
-        <span>Abre el enlace en el móvil y permite instalar apps de esta fuente si Android te lo pide.</span>
+        <span>Abre el enlace en el móvil o tablet y permite instalar apps de esta fuente si Android te lo pide.</span>
       </article>
       <article class="paso">
         <b>Activa el modo desarrollador</b>
-        <span>En la TV: Home → Apps → Configuración de aplicaciones y teclea 12345. Activa Developer Mode, pon como Host PC IP la del móvil y reinicia. Está detallado justo debajo.</span>
+        <span>En la TV: Home → Apps → Configuración de aplicaciones y teclea 12345. Activa Developer Mode y pon como Host PC IP la del móvil o tablet. Está detallado justo debajo.</span>
       </article>
       <article class="paso">
         <b>Misma red y misma IP</b>
-        <span>Conecta el móvil y la TV a la misma Wi-Fi. Si la TV pide una IP de desarrollador, pon la que muestra el instalador (la del móvil).</span>
+        <span>Conecta el móvil o tablet y la TV a la misma Wi-Fi. La TV siempre pide la IP de desarrollador: es la del dispositivo Android, que ya se indica al activar el modo desarrollador.</span>
       </article>
       <article class="paso">
-        <b>Abre el instalador</b>
+        <b>Abre el instalador en el dispositivo Android</b>
         <span>Pulsa “Buscar TVs” y elige tu Samsung en la lista.</span>
       </article>
       <article class="paso">
@@ -170,7 +170,7 @@
     <div class="seccion-cabecera">
       <p class="kicker">En la TV</p>
       <h2>Cómo activar el modo desarrollador</h2>
-      <p>Son las mismas instrucciones que muestra el instalador en el botón «¿Cómo activarlo?». Solo hay que hacerlo la primera vez.</p>
+      <p>Son las mismas instrucciones que muestra el instalador en el botón «¿Cómo activarlo?». Normalmente solo hay que hacerlo una vez.</p>
     </div>
 
     <div class="dev">
@@ -190,17 +190,18 @@
         <h3>Activa Developer Mode</h3>
         <ol>
           <li>Cuando aparezca la ventana de desarrollador, cambia <b>Developer Mode</b> a <b>ON</b>.</li>
-          <li>En el campo <b>Host PC IP</b> introduce la dirección IP del teléfono desde el que vas a instalar la aplicación (la muestra el instalador).</li>
+          <li>En el campo <b>Host PC IP</b> introduce la dirección IP del móvil o tablet desde el que vas a instalar la aplicación (la muestra el instalador). La TV la pide siempre.</li>
           <li>Pulsa <b>OK</b>.</li>
         </ol>
       </article>
 
       <article class="dev-paso">
-        <h3>Reinicia el televisor</h3>
+        <h3>Reinicia el televisor, solo si hace falta</h3>
         <ol>
           <li>Apaga y vuelve a encender el televisor.</li>
           <li>Al entrar de nuevo en <b>Apps</b> debe aparecer la indicación <b>DEVELOP MODE</b>.</li>
         </ol>
+        <p>En algunos modelos antiguos, al reiniciar se desactiva el modo desarrollador y la propia TV lo avisa con un mensaje en inglés. Por eso no hay que reiniciar por sistema: hazlo solo si el instalador sigue diciendo que el modo desarrollador no está activado.</p>
       </article>
     </div>
 
@@ -227,7 +228,7 @@
     <div class="faq">
       <details>
         <summary>No aparece mi TV en la lista</summary>
-        <p>Comprueba que el móvil y la TV están en la misma Wi-Fi, que el modo desarrollador está activo y que la TV tiene como IP de desarrollador la del móvil. Vuelve a pulsar “Buscar TVs”.</p>
+        <p>Comprueba que el móvil o tablet y la TV están en la misma Wi-Fi, que el modo desarrollador está activo y que la TV tiene como IP de desarrollador la del dispositivo Android. Vuelve a pulsar “Buscar TVs”. Si reiniciaste la TV y era un modelo antiguo, mira en Apps si sigue apareciendo DEVELOP MODE: en esos modelos el reinicio lo desactiva y hay que volver a activarlo.</p>
       </details>
       <details>
         <summary>Error al instalar (install failed[118])</summary>
