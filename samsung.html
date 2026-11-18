@@ -8,7 +8,7 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Instalar Astel en Samsung TV · Astel</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231D5BFF'/%3E%3Cstop offset='1' stop-color='%230B1A33'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='45' font-family='Arial,sans-serif' font-size='38' font-weight='900' fill='%23fff' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/estilo.css?v=20261116b">
+<link rel="stylesheet" href="assets/estilo.css?v=20261118a">
 </head>
 <body>
 
@@ -90,9 +90,11 @@
     </div>
 
     <div class="qr-caja">
-      <img src="assets/qr-samsung.png" alt="Código QR para descargar el instalador Astel para Samsung" width="390" height="390">
-      <b>Escanea con el móvil</b>
-      <small>O abre el enlace en el navegador del teléfono</small>
+      <a href="descargas/Instalador-Astel-Samsung-1.6.apk" rel="noopener" aria-label="Descargar el instalador Astel 1.6 para Samsung">
+        <img src="assets/qr-samsung-1.6.png" alt="Código QR para descargar el instalador Astel 1.6 para Samsung" width="390" height="390">
+      </a>
+      <b>Escanea desde el móvil</b>
+      <small>Te lleva al APK 1.6. O abre el enlace en el navegador del teléfono</small>
     </div>
   </section>
 
@@ -116,6 +118,10 @@
         <b>La misma Wi-Fi</b>
         <span>El móvil y la TV tienen que estar en la misma red local.</span>
       </article>
+      <article class="requisito">
+        <b>Una cuenta Samsung</b>
+        <span>Iniciada en la TV: es imprescindible para activar el modo desarrollador. Si no tienes, se crea gratis en <a href="https://v3.account.samsung.com" target="_blank" rel="noopener">v3.account.samsung.com</a>.</span>
+      </article>
     </div>
   </section>
 
@@ -134,7 +140,7 @@
       </article>
       <article class="paso">
         <b>Activa el modo desarrollador</b>
-        <span>En la TV: Ajustes → Asistencia técnica → Acerca de este TV → pulsa 5 veces en “Información de contacto” o en la versión. Activa “Modo desarrollador” y reinicia.</span>
+        <span>En la TV: Home → Apps → Configuración de aplicaciones y teclea 12345. Activa Developer Mode, pon como Host PC IP la del móvil y reinicia. Está detallado justo debajo.</span>
       </article>
       <article class="paso">
         <b>Misma red y misma IP</b>
@@ -159,6 +165,58 @@
     </p>
   </section>
 
+  <!-- ===================================================== modo desarrollador -->
+  <section class="seccion wrap" id="modo-desarrollador">
+    <div class="seccion-cabecera">
+      <p class="kicker">En la TV</p>
+      <h2>Cómo activar el modo desarrollador</h2>
+      <p>Son las mismas instrucciones que muestra el instalador en el botón «¿Cómo activarlo?». Solo hay que hacerlo la primera vez.</p>
+    </div>
+
+    <div class="dev">
+      <article class="dev-paso">
+        <h3>Entra en el menú oculto</h3>
+        <ol>
+          <li>Enciende el televisor.</li>
+          <li>Pulsa el botón <kbd>Home</kbd> del mando.</li>
+          <li>Entra en <b>Apps</b>.</li>
+          <li>Busca y selecciona <b>Configuración de aplicaciones</b> (<i>App Settings</i>), si aparece.</li>
+          <li>Con el mando, introduce rápidamente la secuencia <kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> <kbd>4</kbd> <kbd>5</kbd>.</li>
+        </ol>
+        <p>Si tu mando no tiene números, utiliza el teclado numérico que aparece en pantalla con el botón <kbd>123</kbd>.</p>
+      </article>
+
+      <article class="dev-paso">
+        <h3>Activa Developer Mode</h3>
+        <ol>
+          <li>Cuando aparezca la ventana de desarrollador, cambia <b>Developer Mode</b> a <b>ON</b>.</li>
+          <li>En el campo <b>Host PC IP</b> introduce la dirección IP del teléfono desde el que vas a instalar la aplicación (la muestra el instalador).</li>
+          <li>Pulsa <b>OK</b>.</li>
+        </ol>
+      </article>
+
+      <article class="dev-paso">
+        <h3>Reinicia el televisor</h3>
+        <ol>
+          <li>Apaga y vuelve a encender el televisor.</li>
+          <li>Al entrar de nuevo en <b>Apps</b> debe aparecer la indicación <b>DEVELOP MODE</b>.</li>
+        </ol>
+      </article>
+    </div>
+
+    <p class="aviso" style="margin-top:20px">
+      <b>Si no aparece el menú al introducir 12345:</b> en algunas versiones recientes de Tizen el acceso ha cambiado.
+      Entra en <b>Apps</b>, baja hasta <b>App Settings</b>, selecciona el teclado numérico en pantalla e introduce <b>12345</b>.
+      Es el método que usan esas versiones.
+    </p>
+
+    <p class="aviso" style="margin-top:12px">
+      <b>Hace falta una cuenta Samsung:</b> para completar el proceso la TV debe tener una cuenta de Samsung iniciada.
+      Si no la tienes, puedes crearla en <a href="https://v3.account.samsung.com" target="_blank" rel="noopener">v3.account.samsung.com</a>
+      y añadirla en la TV desde Ajustes → General → Administrador del sistema → Cuenta Samsung.
+    </p>
+  </section>
+
   <!-- ===================================================== problemas -->
   <section class="seccion wrap" id="problemas">
     <div class="seccion-cabecera">
@@ -177,7 +235,7 @@
       </details>
       <details>
         <summary>La TV pide una cuenta de Samsung</summary>
-        <p>En algunos modelos de 2022 en adelante hace falta el certificado de desarrollador. El instalador te guía para iniciar sesión con tu cuenta de Samsung y pedirlo.</p>
+        <p>La cuenta de Samsung es imprescindible para activar el modo desarrollador y para instalar la app fuera de la tienda. Iníciala en la TV desde Ajustes → General → Administrador del sistema → Cuenta Samsung, o créala en v3.account.samsung.com. En modelos de 2022 en adelante, además, el instalador te guía para solicitar el certificado de desarrollador con esa misma cuenta.</p>
       </details>
       <details>
         <summary>Android no deja instalar el APK</summary>

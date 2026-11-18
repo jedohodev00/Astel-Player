@@ -1360,3 +1360,77 @@ dialog.aviso-legal .dialog-nota {
 
 .requisito b { display: block; color: #fff; font-size: 15.5px; margin-bottom: 5px; }
 .requisito span { color: var(--muted); font-size: 13.8px; }
+
+/* modo desarrollador de la TV (pagina de Samsung) */
+.dev {
+    display: grid;
+    gap: 14px;
+    counter-reset: dev;
+}
+
+.dev-paso {
+    padding: 20px 22px;
+    border-radius: 16px;
+    background: var(--cristal);
+    border: 1px solid var(--linea);
+}
+
+.dev-paso h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 10px;
+    color: #fff;
+    font-size: 15.5px;
+}
+
+.dev-paso h3::before {
+    counter-increment: dev;
+    content: counter(dev);
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    flex: 0 0 24px;
+    border-radius: 50%;
+    font-size: 12.5px;
+    font-weight: 800;
+    color: #fff;
+    background: linear-gradient(120deg, var(--cyan), var(--blue));
+}
+
+.dev-paso ol {
+    margin: 0;
+    padding-left: 20px;
+    color: var(--muted);
+    font-size: 13.8px;
+    line-height: 1.65;
+}
+
+.dev-paso ol li { margin-bottom: 5px; }
+
+.dev-paso p {
+    margin: 10px 0 0;
+    color: var(--muted);
+    font-size: 13.2px;
+}
+
+.dev-paso b { color: #fff; }
+
+.dev-paso kbd {
+    display: inline-block;
+    min-width: 22px;
+    margin: 0 1px;
+    padding: 1px 6px;
+    border-radius: 5px;
+    border: 1px solid var(--linea);
+    background: rgba(92, 198, 255, .1);
+    color: #fff;
+    font-family: inherit;
+    font-size: 12.5px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.aviso b { color: #fff; }
+.aviso a { color: #9ecbff; font-weight: 600; }

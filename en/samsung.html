@@ -8,7 +8,7 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Install Astel on Samsung TV · Astel</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231D5BFF'/%3E%3Cstop offset='1' stop-color='%230B1A33'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='45' font-family='Arial,sans-serif' font-size='38' font-weight='900' fill='%23fff' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="../assets/estilo.css?v=20261116b">
+<link rel="stylesheet" href="../assets/estilo.css?v=20261118a">
 </head>
 <body>
 
@@ -69,7 +69,7 @@
       </p>
 
       <div class="acciones">
-        <a class="btn" href="https://verify.apppilot.top/Tizen/Instalador-Astel-Samsung.apk" rel="noopener">
+        <a class="btn" href="../descargas/Instalador-Astel-Samsung-1.6.apk" rel="noopener">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v11"/><path d="M7.5 9.5 12 14l4.5-4.5"/><path d="M4 18.5h16"/></svg>
           Download installer (APK)
         </a>
@@ -90,9 +90,11 @@
     </div>
 
     <div class="qr-caja">
-      <img src="../assets/qr-samsung.png" alt="QR code to download the Astel installer for Samsung" width="390" height="390">
-      <b>Scan with your phone</b>
-      <small>Or open the link in your phone browser</small>
+      <a href="../descargas/Instalador-Astel-Samsung-1.6.apk" rel="noopener" aria-label="Download the Astel 1.6 installer for Samsung">
+        <img src="../assets/qr-samsung-1.6.png" alt="QR code to download the Astel 1.6 installer for Samsung" width="390" height="390">
+      </a>
+      <b>Scan from your phone</b>
+      <small>Opens the 1.6 APK. Or use the link in your phone browser</small>
     </div>
   </section>
 
@@ -116,6 +118,10 @@
         <b>The same Wi-Fi</b>
         <span>The phone and the TV must be on the same local network.</span>
       </article>
+      <article class="requisito">
+        <b>A Samsung account</b>
+        <span>Signed in on the TV: it is required to enable developer mode. If you don't have one, create it free at <a href="https://v3.account.samsung.com" target="_blank" rel="noopener">v3.account.samsung.com</a>.</span>
+      </article>
     </div>
   </section>
 
@@ -134,7 +140,7 @@
       </article>
       <article class="paso">
         <b>Enable developer mode</b>
-        <span>On the TV: Settings → Support → About this TV → tap “Contact info” or the version 5 times. Enable “Developer mode” and restart.</span>
+        <span>On the TV: Home → Apps → App Settings and type 12345. Turn Developer Mode on, set Host PC IP to the phone's IP and restart. Full details just below.</span>
       </article>
       <article class="paso">
         <b>Same network and IP</b>
@@ -159,6 +165,58 @@
     </p>
   </section>
 
+  <!-- ===================================================== developer mode -->
+  <section class="seccion wrap" id="developer-mode">
+    <div class="seccion-cabecera">
+      <p class="kicker">On the TV</p>
+      <h2>How to enable developer mode</h2>
+      <p>The same instructions the installer shows under “How do I enable it?”. You only need to do this once.</p>
+    </div>
+
+    <div class="dev">
+      <article class="dev-paso">
+        <h3>Open the hidden menu</h3>
+        <ol>
+          <li>Turn the TV on.</li>
+          <li>Press the <kbd>Home</kbd> button on the remote.</li>
+          <li>Go to <b>Apps</b>.</li>
+          <li>Find and select <b>App Settings</b>, if it appears.</li>
+          <li>With the remote, quickly enter the sequence <kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd> <kbd>4</kbd> <kbd>5</kbd>.</li>
+        </ol>
+        <p>If your remote has no numbers, use the on-screen keypad with the <kbd>123</kbd> button.</p>
+      </article>
+
+      <article class="dev-paso">
+        <h3>Turn Developer Mode on</h3>
+        <ol>
+          <li>When the developer window appears, set <b>Developer Mode</b> to <b>ON</b>.</li>
+          <li>In the <b>Host PC IP</b> field enter the IP address of the phone you are installing from (the installer shows it).</li>
+          <li>Press <b>OK</b>.</li>
+        </ol>
+      </article>
+
+      <article class="dev-paso">
+        <h3>Restart the TV</h3>
+        <ol>
+          <li>Turn the TV off and back on.</li>
+          <li>When you open <b>Apps</b> again, <b>DEVELOP MODE</b> should be shown.</li>
+        </ol>
+      </article>
+    </div>
+
+    <p class="aviso" style="margin-top:20px">
+      <b>If the menu doesn't show up after entering 12345:</b> on some recent Tizen versions the access has changed.
+      Go to <b>Apps</b>, scroll down to <b>App Settings</b>, select the on-screen keypad and enter <b>12345</b>.
+      That is the method those versions use.
+    </p>
+
+    <p class="aviso" style="margin-top:12px">
+      <b>A Samsung account is required:</b> the TV must have a Samsung account signed in to complete the process.
+      If you don't have one, create it at <a href="https://v3.account.samsung.com" target="_blank" rel="noopener">v3.account.samsung.com</a>
+      and add it on the TV from Settings → General → System Manager → Samsung Account.
+    </p>
+  </section>
+
   <!-- ===================================================== troubleshooting -->
   <section class="seccion wrap" id="issues">
     <div class="seccion-cabecera">
@@ -177,7 +235,7 @@
       </details>
       <details>
         <summary>The TV asks for a Samsung account</summary>
-        <p>Some 2022 and newer models need the developer certificate. The installer guides you through signing in with your Samsung account and requesting it.</p>
+        <p>The Samsung account is required to enable developer mode and to install the app outside the store. Sign in on the TV from Settings → General → System Manager → Samsung Account, or create it at v3.account.samsung.com. On 2022 and newer models the installer also guides you through requesting the developer certificate with that same account.</p>
       </details>
       <details>
         <summary>Android blocks the APK</summary>
